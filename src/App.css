@@ -6,9 +6,9 @@ body {
 }
 #navBar {
   width: 100%;
-  height: 10vw;
+  height: fit-content;
   background: linear-gradient(to bottom left, #4b4b4b 0%, #222222 100%);
-  box-shadow: 0px 0.5vw 30px #888888;
+  box-shadow: 0px 0.5vw 20px #646464;
   
 }
 #navBar row {
@@ -16,20 +16,83 @@ body {
 }
 #title {
   color: #ecececc0;
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: Arial, Helvetica, sans-serif;
-  padding-left: 5vw;
+  /* padding-right: 5vw; */
+  text-align: center;
 }
 .navButton {
   color: #ecececc0 ;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: center;
-  padding: 2vw;
-  padding-bottom: 1vw ;
+  /* padding: 2vw; */
+  padding-bottom: 0.5vw ;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 .navButton:hover {
   /* border-bottom: #ecececc0 solid thin; */
-  box-shadow: 0px 15px 20px -20px #cacaca;
+  box-shadow: 0px 20px 20px -20px #cacaca;
 
   cursor: pointer;
+}
+#logo {
+  width: 5.5vw;
+  height: auto;
+}
+#coverArea{
+  margin: 1vw;
+  height : 50vw;
+  
+  background-image: url('./assets/livingRoomSample.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#coverPhoto {
+  width : 100%;
+  height : 400px
+ 
+  
+}
+#coverTitle {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5vw;
+  text-shadow: 10px 10px 10px  #555555;
+  color: white;
+  border: white solid 0.3vw;
+  /* box-shadow: 10px 10px 20px 10px#555555; */
+  width: fit-content;
+  display: block;
+  margin: auto;
+  margin-top: 4vw;
+  padding: 1.5vw 2vw 1.5vw 2vw;
+
+}
+#coverTitle p {
+  font-size: 4vw;
+  margin-bottom: 0px;
+}
+#leaf {
+  width: 3vw;
+  height: auto;
+}
+#coverDes {
+  color: white;
+  margin-top: 2vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  text-shadow: 10px 10px 10px  #555555;
+
+}
+#coverDes p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+@media screen and ( min-width: 1000px){
+  .navButton{
+    font-size: 30px;
+  }
 }
