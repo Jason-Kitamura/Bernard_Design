@@ -34,10 +34,10 @@ function App() {
                   Home
                 </div>
                 <div class='col-3 navButton'>
-                  Gallery
+                  About
                 </div>
                 <div class='col-3 navButton'>
-                  About
+                  Gallery
                 </div>
                 <div class='col-3 navButton'>
                   Contact
@@ -67,12 +67,47 @@ function App() {
                 <br/> at bernardbuild@gmail.com
                 <br/>(519) 215- 0437 or
                 <br/>(705) 888- 0059
+                <br/>
+                <br/>
+                or click 'Book Now' to get in-touch
+                <br/> <button id='bookBtn'>Book Now</button>
               </p>
               
             </div>
           </div>
                 {/* <img id='coverPhoto' src={coverPhoto}></img> */}
 
+        </div>
+        {/*about us area*/}
+        <div id='aboutArea'>
+            <div id='aboutTitle'>
+              <p>About Us</p>
+            </div>
+            <div id='aboutDes'>
+                <h1>What We Do</h1>
+                <br/>
+                <p>
+                We build beautiful, lasting spaces, special to our clients. Thoughtful design, quality installation and care for detail is standard to every project.   Whether it be a renovation or new installation we are happy to help make your space come to life.  Please take a look at our gallery of projects from Southern Georgian Bay to Caledon and Orangeville area.
+                </p>
+                <br/>
+                <h1>Working Together</h1>
+                <br/>
+                <p>
+                We offer an end-to-end client experience that includes seamless communication, budgeting, organization and quality workmanship. A breath of interior finishing experience specializing in tile and stone. 
+                  <br/>
+                  <br/>
+                  <ul>
+                    <li>Renovations</li>
+                    <li>Bathrooms</li>
+                    <li>Fireplaces</li>
+                    <li>Tile</li>
+                    <li>Stone</li>
+                    <li>Cabinetry</li>
+                    <li>Flooring</li>
+                    <li>Landscape</li>
+                  </ul>
+                </p>
+            </div>
         </div>
       </div>
       
