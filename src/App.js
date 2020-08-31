@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Gallery from './components/Gallery/gallery/photoGallery'
 import logo from './assets/bernardLogo.png'
 import samplePhoto from './assets/livingRoomSample.jpg'
 import leaf from './assets/leaf.png'
@@ -62,7 +63,7 @@ function App() {
                     Quality Work
                     <br/> Building Trust
                   </p>
-                <br/>Please Contact
+                    Please Contact
                 <br/>Grayson Bernard
                 <br/> at bernardbuild@gmail.com
                 <br/>(519) 215- 0437 or
@@ -83,33 +84,48 @@ function App() {
             <div id='aboutTitle'>
               <p>About Us</p>
             </div>
-            <div id='aboutDes'>
-                <h1>What We Do</h1>
-                <br/>
-                <p>
-                We build beautiful, lasting spaces, special to our clients. Thoughtful design, quality installation and care for detail is standard to every project.   Whether it be a renovation or new installation we are happy to help make your space come to life.  Please take a look at our gallery of projects from Southern Georgian Bay to Caledon and Orangeville area.
-                </p>
-                <br/>
-                <h1>Working Together</h1>
-                <br/>
-                <p>
-                We offer an end-to-end client experience that includes seamless communication, budgeting, organization and quality workmanship. A breath of interior finishing experience specializing in tile and stone. 
+            <div class='row' id='desArea'>
+              <div class='col-8' id='aboutDes'>
+                  <h1>What We Do</h1>
                   <br/>
+                  <p>
+                  We build beautiful, lasting spaces, special to our clients. Thoughtful design, quality installation and care for detail is standard to every project.   Whether it be a renovation or new installation we are happy to help make your space come to life.  Please take a look at our gallery of projects from Southern Georgian Bay to Caledon and Orangeville area.
+                  </p>
                   <br/>
-                  <ul>
-                    <li>Renovations</li>
-                    <li>Bathrooms</li>
-                    <li>Fireplaces</li>
-                    <li>Tile</li>
-                    <li>Stone</li>
-                    <li>Cabinetry</li>
-                    <li>Flooring</li>
-                    <li>Landscape</li>
-                  </ul>
-                </p>
+                  <h1>Working Together</h1>
+                  <br/>
+                  <p>
+                    We offer an end-to-end client experience that includes seamless communication, budgeting, organization and quality workmanship. A breath of interior finishing experience specializing in tile and stone. 
+                    <br/>
+                    <br/>
+                    <ul>
+                      <li>Renovations</li>
+                      <li>Bathrooms</li>
+                      <li>Fireplaces</li>
+                      <li>Tile</li>
+                      <li>Stone</li>
+                      <li>Cabinetry</li>
+                      <li>Flooring</li>
+                      <li>Landscape</li>
+                    </ul>
+                  </p>
+              </div>
+              <div class='col-4' id='desPhoto'>
+
+              </div>
             </div>
+            
         </div>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <Gallery/>
+      <br/>
+      <br/>
+      <footer class='footer'>
+        hi
+      </footer>
       
     </div>
   );

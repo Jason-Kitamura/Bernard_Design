@@ -3,7 +3,30 @@
 body {
   background-color: #000000d7;
   min-height: 100%;
+  overflow-x: hidden;
 }
+/* .react-photo-gallery--gallery {
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  height : 600px;
+  /* min-width: 1000px; */
+  /* overflow: scroll
+
+
+}  */
+body::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(177, 177, 177);
+  border-radius: 10px;
+  }
+
 #navBar {
   width: 100%;
   height: fit-content;
@@ -87,7 +110,7 @@ body {
 
 }
 #coverDes p {
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
 }
 #bookBtn{
@@ -131,6 +154,22 @@ body {
 }
 #aboutDes ul {
   margin-left: 2vw;
+}
+#desArea{
+  width: 100%;
+  margin: auto;
+}
+#desPhoto {
+  background-image: url('./assets/fireplace1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom left, #4b4b4b 0%, #222222 100%);
+  box-shadow: 0px 0.5vw 20px #646464;
+  
 }
 
 @media screen and ( min-width: 1000px){
