@@ -21,10 +21,6 @@ function App() {
                 </div>
                 
                 <div class='col-8'>
-                {/* <p id='title'>
-                  Bernard 
-                  <br/> Design & Build
-                </p> */}
                 </div>
                
               </div>
@@ -49,13 +45,13 @@ function App() {
         </navBar>
         <div id='coverArea' style={coverPhoto}>
           <div class='row'>
-            <div class='col'>
+            <div class='col-md-6'>
                 <p id='coverTitle'>
                   BERNARD
                   <br/> <p>Design <img id='leaf' src={leaf}></img> Build</p>
                 </p>
             </div>
-            <div class='col'>
+            <div class='col-md-6'>
               <p id='coverDes'>
                 WELCOME
                 <br/>

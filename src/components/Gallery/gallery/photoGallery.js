@@ -13,7 +13,7 @@ function Gallery () {
                     <h1 id='galleryTitle'>Gallery</h1>
                 </div>
                 <div class='col'>
-                    <p id='instagram'><i class='fab fa-instagram fa-4x' id='instagramIcon'></i><p id='instaDes'>Follow us on Instagram!</p></p>
+                    <p id='instagram'><i class='fab fa-instagram fa-4x' id='instagramIcon'></i></p>
                 </div>
             </div>
                 
