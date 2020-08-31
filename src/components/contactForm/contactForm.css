@@ -1,0 +1,54 @@
+#contact {
+    background-color: black;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#contactTitle {
+    color:whitesmoke;
+    font-size: 8vh;
+    padding: 5vw;
+    padding-bottom: 2vw;
+}
+#contactDes{
+    color:whitesmoke;
+    font-size: 5vh;
+    padding: 2vw;
+    text-align: center;
+}
+#contactForm {
+    display: block;
+    margin: auto;
+    width: 60%;
+    min-width: 300px;
+}
+.contactInput {
+ 
+    background-color: unset;
+    color: white;
+    border: none;
+    border-bottom: white solid thin;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    margin: auto;
+}
+.contactInput:focus {
+    background-color: unset;
+    border: none;
+    border-bottom: white solid thin;
+    outline: none;
+}
+#contactMessage{
+    height: 100px;
+}
+#contactBtn{
+    float: right;
+    margin: 20px;
+    margin-right: 0;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: grey;
+    color: white;
+}

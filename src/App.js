@@ -1,17 +1,22 @@
 import React from 'react';
 import './App.css';
-import Gallery from './components/Gallery/gallery/photoGallery'
+import Gallery from './components/Gallery/gallery/photoGallery';
+import ContactForm from './components/contactForm/contactForm'
 import logo from './assets/bernardLogo.png'
 import samplePhoto from './assets/livingRoomSample.jpg'
 import leaf from './assets/leaf.png'
+
+import Headroom from 'react-headroom'
 
 function App() {
   const coverPhoto = {
     backgroundImage : samplePhoto
   }
+
   return (
     <div className="App">
       <div>
+        <Headroom>
         <navBar id='navBar' class='navbar'>
           <row class='row'>
             <div class='col-6' >
@@ -43,6 +48,8 @@ function App() {
             </div>
           </row>
         </navBar>
+        </Headroom>
+        
         <div id='coverArea' style={coverPhoto}>
           <div class='row'>
             <div class='col-md-6'>
@@ -117,8 +124,7 @@ function App() {
       <br/>
       <br/>
       <Gallery/>
-      <br/>
-      <br/>
+      <ContactForm/>
       <footer class='footer'>
         hi
       </footer>
