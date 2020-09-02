@@ -1,5 +1,5 @@
-import React, {} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, {useState} from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './gallery.css';
 
 import Bathroom from './bathroom/Bathroom'
@@ -18,21 +18,24 @@ function PhotoGallery (){
         textAlign : 'center'
     }
 
+
+
     return(
+        
         <div id='photoGallery'>
             <h1 id='galleryTitle'>Gallery</h1>
             <div id='galleryNav'>
                 <div class='row'>
-                    <Router>
+                    
                         <div class='col gallNavBtn'>
-                            <Link to="/" style={navBtn}>
+                            <Link to="/" style={navBtn} >
                                 <p>
                                     Bathroom
                                 </p>
                             </Link>
                         </div>
                         <div class='col gallNavBtn'>
-                            <Link to="/fireplace" style={navBtn}>
+                            <Link to="/fireplace" style={navBtn} >
                                 <p>
                                     Fireplace
                                 </p>
@@ -66,15 +69,26 @@ function PhotoGallery (){
                                 </p>
                             </Link>
                         </div>
-                    </Router>
+                    
                     
                 </div>
             </div>
-            <Router>
-                <Route path={["/"]} component={Bathroom} />
-            </Router>
+            
+                <Switch>
+                    <Route path={["/fireplace"]} component={Fireplace} />
+                    <Route path={["/flooring"]} component={Flooring} />
+                    <Route path={["/kitchen"]} component={Kitchen} />
+                    <Route path={["/misc"]} component={Misc} />
+                    <Route path={["/outdoor"]} component={Outdoor} />
+                    <Route  exact path={["/"]} component={Bathroom} />
+                </Switch>
+                    
+                   
+               
+           
            
         </div>
+        
     )
 }
 

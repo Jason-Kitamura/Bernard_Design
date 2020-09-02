@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, } from "react-router-dom";
+
 import './App.css';
 import PhotoGallery from './components/gallery/PhotoGallery';
 import ContactForm from './components/contactForm/contactForm'
@@ -14,7 +16,9 @@ function App() {
   }
 
   return (
+    <Router>
     <div className="App">
+      
       <div>
         <Headroom>
         <navBar id='navBar' class='navbar'>
@@ -129,8 +133,9 @@ function App() {
       <footer class='footer'>
         hi
       </footer>
-      
+     
     </div>
+    </Router>
   );
 }
 

@@ -1,48 +1,43 @@
+import pic1 from './assets/IMG_01 (1).jpg';
+import pic2 from './assets/IMG_01 (2).jpg';
+import pic3 from './assets/IMG_01 (3).JPG';
+import pic4 from './assets/IMG_01 (4).JPG';
+import pic5 from './assets/IMG_01 (5).jpg';
+import pic6 from './assets/IMG_01 (6).jpg';
+import pic7 from './assets/IMG_01 (7).jpg';
+
+
 export const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      src: pic1,
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+      src: pic2,
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+      src: pic3,
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      src: pic4,
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
-      height: 3
+      src: pic5,
+      width: 3,
+      height: 4
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
-    }
+      src: pic6,
+      width: 3,
+      height: 4
+    },
+    
   ];
   
