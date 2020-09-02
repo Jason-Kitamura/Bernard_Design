@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Gallery from './components/Gallery/gallery/photoGallery';
+import PhotoGallery from './components/gallery/PhotoGallery';
 import ContactForm from './components/contactForm/contactForm'
 import logo from './assets/bernardLogo.png'
-import samplePhoto from './assets/livingRoomSample.jpg'
+import samplePhoto from './assets/kitchenCover.jpg'
 import leaf from './assets/leaf.png'
 
 import Headroom from 'react-headroom'
@@ -33,16 +33,16 @@ function App() {
             <div class='col-6'>
               <div class='row'>
                 <div class='col-3 navButton'>
-                  Home
+                  HOME
                 </div>
                 <div class='col-3 navButton'>
-                  About
+                  ABOUT
                 </div>
                 <div class='col-3 navButton'>
-                  Gallery
+                  GALLERY
                 </div>
                 <div class='col-3 navButton'>
-                  Contact
+                  CONTACT
                 </div>
               </div>
             </div>
@@ -123,7 +123,8 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <Gallery/>
+      {/* <Gallery/> */}
+      <PhotoGallery/>
       <ContactForm/>
       <footer class='footer'>
         hi

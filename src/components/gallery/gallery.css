@@ -1,0 +1,35 @@
+#photoGallery{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#galleryTitle {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#galleryNav {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    font-weight: bold;
+}
+.gallNavBtn {
+    width: min-content;
+    padding: 0;
+   
+}
+.gallNavBtn:hover {
+   
+    cursor: pointer;
+   
+}
+
+@media screen and ( max-width: 700px ){
+    #galleryNav {
+        font-size: 2vw;
+        width: 90%;
+    }
+}
