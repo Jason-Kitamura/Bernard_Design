@@ -1,48 +1,78 @@
+import pic1 from'./assets/IMG_03 (1).jpg';
+import pic2 from'./assets/IMG_03 (2).JPG';
+import pic3 from'./assets/IMG_03 (3).jpg';
+import pic4 from'./assets/IMG_03 (4).jpg';
+import pic5 from'./assets/IMG_03 (5).jpg';
+import pic6 from'./assets/IMG_03 (6).jpg';
+import pic7 from'./assets/IMG_03 (7).jpg';
+import pic8 from'./assets/IMG_03 (8).jpg';
+import pic9 from'./assets/IMG_03 (9).jpg';
+import pic10 from'./assets/IMG_03 (10).jpg';
+import pic11 from'./assets/IMG_03 (11).jpg';
+import pic12 from'./assets/IMG_03 (12).jpg';
+
+
 export const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: pic1,
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: pic2,
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      src: pic3,
+      width: 3,
+      height: 3
+    },
+    {
+      src: pic4,
+      width: 4,
+      height: 3
+    },
+    {
+      src: pic5,
+      width: 4,
+      height: 3
+    },
+    {
+      src: pic6,
+      width: 3,
+      height: 5
+    },
+    {
+      src: pic7,
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      src: pic8,
+      width: 3,
+      height: 4
+    },
+    {
+      src: pic9,
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
-    }
+      src: pic10,
+      width: 3,
+      height: 4
+    },
+    {
+      src: pic11,
+      width: 3,
+      height: 5
+    },
+    {
+      src: pic12,
+      width: 3,
+      height: 4
+    },
+   
   ];
   

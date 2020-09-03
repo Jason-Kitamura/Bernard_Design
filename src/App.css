@@ -3,6 +3,7 @@
 body {
   background-color: #000000d7;
   min-height: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 /* .react-photo-gallery--gallery {
@@ -15,17 +16,17 @@ body {
 
 
 }  */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 10px;
   }
   
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(177, 177, 177);
+  } */
+/* body::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 50, 16);
   border-radius: 10px;
-  }
+  } */
 
 #navBar {
   width: 100%;
