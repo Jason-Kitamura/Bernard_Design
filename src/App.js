@@ -37,16 +37,24 @@ function App() {
             <div class='col-6'>
               <div class='row'>
                 <div class='col-3 navButton'>
-                  HOME
+                  <a href='#coverArea'>
+                    Home
+                  </a>
                 </div>
                 <div class='col-3 navButton'>
-                  ABOUT
+                  <a href='#aboutArea'>
+                    About
+                  </a>
                 </div>
                 <div class='col-3 navButton'>
-                  GALLERY
+                  <a href='#galleryArea'>
+                    Gallery
+                  </a>
                 </div>
                 <div class='col-3 navButton'>
-                  CONTACT
+                  <a href='#contactArea'>
+                    Contact
+                  </a>
                 </div>
               </div>
             </div>
@@ -78,7 +86,7 @@ function App() {
                 <br/>
                 <br/>
                 or click 'Book Now' to get in-touch
-                <br/> <button id='bookBtn'>Book Now</button>
+                <br/> <button id='bookBtn'><a href='#contactArea'>Book Now</a></button>
               </p>
               
             </div>
@@ -128,10 +136,17 @@ function App() {
       <br/>
       <br/>
       {/* <Gallery/> */}
-      <PhotoGallery/>
-      <ContactForm/>
+      <div id='galleryArea'>
+        <PhotoGallery/>
+      </div>
+      <div id='contactArea'>
+        <ContactForm/>
+      </div>
       <footer class='footer'>
-        hi
+        <div id='footerCopyright'>
+          <p>COPYRIGHT © 2020 BERNARDBUILD - ALL RIGHTS RESERVED.</p>
+          <p>Created by Jason Kitamura with React.js</p>
+        </div>
       </footer>
      
     </div>

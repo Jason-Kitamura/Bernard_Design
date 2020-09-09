@@ -5,22 +5,30 @@
 }
 
 #contactTitle {
+    display: block;
+    margin: auto;
     color:whitesmoke;
-    font-size: 8vh;
-    padding: 5vw;
-    padding-bottom: 2vw;
+    font-size: 6vh;
+    
+    padding-bottom: 0px;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: white solid 2px;
+    width: fit-content;
 }
 #contactDes{
     color:whitesmoke;
-    font-size: 5vh;
+    font-size: 4vh;
     padding: 2vw;
     text-align: center;
 }
 #contactForm {
     display: block;
     margin: auto;
+    margin-bottom: 100px;
     width: 60%;
     min-width: 300px;
+    max-width: 700px;
 }
 .contactInput {
  
@@ -51,4 +59,32 @@
     border: none;
     background-color: grey;
     color: white;
+}
+#contactInfo {
+    color: white;
+    text-align: center;
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 75px;
+    
+}
+#infoTitle{
+    font-size: 40px;
+    text-align: center;
+}
+#infoDes {
+    font-size: 25px;
+}
+@media screen and (max-width: 450px){
+    #contactInfo{
+        width: fit-content;
+    }
+    #infoTitle{
+        font-size: 30px;
+        text-align: center;
+    }
+    #infoDes {
+        font-size: 20px;
+    }
 }

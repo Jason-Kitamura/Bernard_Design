@@ -8,9 +8,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #galleryTitle {
+    display: block;
+    margin: auto;
     text-align: center;
     font-size: 50px;
     margin-bottom: 50px;
+    border-bottom: white solid 2px;
+    width: fit-content;
 }
 #galleryNav {
     display: block;
