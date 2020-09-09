@@ -102,7 +102,7 @@ function App() {
                   <h1>Working Together</h1>
                   <br/>
                   <p>
-                    We offer an end-to-end client experience that includes seamless communication, budgeting, organization and quality workmanship. A breath of interior finishing experience specializing in tile and stone. 
+                    We offer an end-to-end client experience that includes seamless communication, budgeting, organization and quality workmanship. A full range of interior finishing services, specializing in tile and stone. 
                     <br/>
                     <br/>
                     <ul>

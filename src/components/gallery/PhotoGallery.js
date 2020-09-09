@@ -22,7 +22,7 @@ function PhotoGallery (){
 
     function selectedStyle( i ){
         const selected = {   
-            boxShadow : '0px 15px 15px  -8px white'
+            boxShadow : '0px 10px 15px -10px white'
         }
 
         const notSelected = {
@@ -35,77 +35,67 @@ function PhotoGallery (){
         }
     }
 
-
-
     return(
         
         <div id='photoGallery'>
             <h1 id='galleryTitle'>Gallery</h1>
             <div id='galleryNav'>
                 <div class='row'>
-                    
-                        <div class='col gallNavBtn'>
-                            <Link to="/" style={navBtn} onClick={e => setState(0)}>
-                                <p style={selectedStyle( 0)}>
-                                    Bathroom
-                                </p>
-                            </Link>
-                        </div>
-                        <div class='col gallNavBtn'>
-                            <Link to="/fireplace" style={navBtn} onClick={e => setState(1)} >
-                                <p style={selectedStyle( 1)}>
-                                    Fireplace
-                                </p>
-                            </Link>
-                        </div>
-                        <div class='col gallNavBtn'>
-                            <Link to="/flooring" style={navBtn} onClick={e => setState(2)}>
-                                <p style={selectedStyle( 2)}>
-                                    Flooring
-                                </p>
-                            </Link>
-                        </div>
-                        <div class='col gallNavBtn'>
-                            <Link to="/kitchen" style={navBtn} onClick={e => setState(3)}>
-                                <p style={selectedStyle( 3)}>
-                                    Kitchen
-                                </p>
-                            </Link>
-                        </div>
-                        <div class='col gallNavBtn'>
-                            <Link to="/misc" style={navBtn} onClick={e => setState(4)}>
-                                <p style={selectedStyle( 4)}>
-                                    Misc
-                                </p>
-                            </Link>
-                        </div>
-                        <div class='col gallNavBtn'>
-                            <Link to="/outdoor" style={navBtn} onClick={e => setState(5)}>
-                                <p style={selectedStyle( 5)}>
-                                    Outdoor
-                                </p>
-                            </Link>
-                        </div>
-                    
-                    
+                    <div class='col gallNavBtn'>
+                        <Link to="/" style={navBtn} onClick={e => setState(0)}>
+                            <p style={selectedStyle( 0)}>
+                                Bathroom
+                            </p>
+                        </Link>
+                    </div>
+                    <div class='col gallNavBtn'>
+                        <Link to="/fireplace" style={navBtn} onClick={e => setState(1)} >
+                            <p style={selectedStyle( 1)}>
+                                Fireplace
+                            </p>
+                        </Link>
+                    </div>
+                    <div class='col gallNavBtn'>
+                        <Link to="/flooring" style={navBtn} onClick={e => setState(2)}>
+                            <p style={selectedStyle( 2)}>
+                                Flooring
+                            </p>
+                        </Link>
+                    </div>
+                    <div class='col gallNavBtn'>
+                        <Link to="/kitchen" style={navBtn} onClick={e => setState(3)}>
+                            <p style={selectedStyle( 3)}>
+                                Kitchen
+                            </p>
+                        </Link>
+                    </div>
+                    <div class='col gallNavBtn'>
+                        <Link to="/misc" style={navBtn} onClick={e => setState(4)}>
+                            <p style={selectedStyle( 4)}>
+                                Misc
+                            </p>
+                        </Link>
+                    </div>
+                    <div class='col gallNavBtn'>
+                        <Link to="/outdoor" style={navBtn} onClick={e => setState(5)}>
+                            <p style={selectedStyle( 5)}>
+                                Outdoor
+                            </p>
+                        </Link>
+                    </div>
                 </div>
             </div>
-            
+            <div id='photoArea'>
                 <Switch>
                     <Route path={["/fireplace"]} component={Fireplace} />
                     <Route path={["/flooring"]} component={Flooring} />
                     <Route path={["/kitchen"]} component={Kitchen} />
                     <Route path={["/misc"]} component={Misc} />
                     <Route path={["/outdoor"]} component={Outdoor} />
-                    <Route  exact path={["/"]} component={Bathroom} />
+                    <Route exact path={["/"]} component={Bathroom} />
                 </Switch>
-                    
-                   
-               
-           
-           
+            </div>
         </div>
-        
     )
 }
 

@@ -7,11 +7,7 @@ import pic6 from'./assets/IMG_05 (6).jpg';
 
 
 export const photos = [
-    {
-      src: pic1,
-      width: 3,
-      height: 4
-    },
+    
     {
       src: pic2,
       width: 3,
@@ -34,6 +30,11 @@ export const photos = [
     },
     {
       src: pic6,
+      width: 3,
+      height: 4
+    },
+    {
+      src: pic1,
       width: 3,
       height: 4
     },

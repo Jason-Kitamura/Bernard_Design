@@ -1,3 +1,8 @@
+#photoGallery img {
+    padding: 2.5px;
+    
+}
+
 #photoGallery{
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,6 +30,10 @@
    
     cursor: pointer;
    
+}
+#photoArea{
+    display: block;
+    margin: auto;
 }
 
 .css-1cm5myo{
