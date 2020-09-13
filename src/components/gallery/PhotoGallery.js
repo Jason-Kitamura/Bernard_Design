@@ -22,7 +22,8 @@ function PhotoGallery (){
 
     function selectedStyle( i ){
         const selected = {   
-            boxShadow : '0px 10px 15px -10px white'
+            boxShadow : '0px 10px 15px -10px white',
+            borderBottom : 'white solid 1px'
         }
 
         const notSelected = {

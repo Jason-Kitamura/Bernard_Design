@@ -15,11 +15,11 @@ function ContactForm(){
                 <button id='contactBtn'>SEND</button>
             </div>
             <div id='contactInfo'>
-                <p id='infoTitle'> Bernard Desing Build</p>
+                <p id='infoTitle'> Bernard Design Build</p>
                 <p id='infoDes'>
-                    Grayson Bernard
-                    <br/> (519) 215-0437 or (705) 888-0059
+                         Grayson Bernard
                     <br/>bernardbuild@gmail.com
+                    <br/>(705) 888-0059
                 </p>
             </div>
             

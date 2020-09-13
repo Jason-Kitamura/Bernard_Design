@@ -77,14 +77,21 @@
     font-size: 25px;
 }
 @media screen and (max-width: 450px){
+    #contactTitle {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #contactDes {
+        font-size: 20px;
+    }
     #contactInfo{
         width: fit-content;
     }
-    #infoTitle{
+    #infoTitle {
         font-size: 30px;
         text-align: center;
     }
-    #infoDes {
+    #infoDes{
         font-size: 20px;
     }
 }

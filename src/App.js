@@ -23,19 +23,9 @@ function App() {
         <Headroom>
         <navBar id='navBar' class='navbar'>
           <row class='row'>
-            <div class='col-6' >
-              <div class='row'>
-              <div class='col-4'>
+            
                 <img src={logo} id='logo'></img>
-                </div>
-                
-                <div class='col-8'>
-                </div>
-               
-              </div>
-            </div>
-            <div class='col-6'>
-              <div class='row'>
+                <div class='row' id='navBtnRow'>
                 <div class='col-3 navButton'>
                   <a href='#coverArea'>
                     Home
@@ -56,8 +46,8 @@ function App() {
                     Contact
                   </a>
                 </div>
-              </div>
-            </div>
+                </div>
+                
           </row>
         </navBar>
         </Headroom>
@@ -81,8 +71,7 @@ function App() {
                     Please Contact
                 <br/>Grayson Bernard
                 <br/> at bernardbuild@gmail.com
-                <br/>(519) 215- 0437 or
-                <br/>(705) 888- 0059
+                <br/>(705) 888 0059
                 <br/>
                 <br/>
                 or click 'Book Now' to get in-touch

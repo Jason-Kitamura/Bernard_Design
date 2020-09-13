@@ -3,7 +3,7 @@
 body {
   background-color: #000000d7;
   min-height: 100%;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 a {
@@ -54,19 +54,32 @@ body::-webkit-scrollbar-track {
   /* padding-right: 5vw; */
   text-align: center;
 }
+#navBtnRow {
+  position: fixed;
+  width: 50%;
+  min-width: fit-content;
+  top: 10px;
+  right: 5vw;
+}
 .navButton {
   color: rgb(214, 214, 214) ;
   font-size: 2vw;
   text-align: center;
+  
   /* padding: 2vw; */
-  padding-top: 2%;
-  padding-bottom: 0.5vw ;
+  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+@media screen and ( max-width: 400px ){
+  .navButton {
+    font-size: 2.5vw;
+  }
+}
+
 .navButton:hover {
   /* border-bottom: #ecececc0 solid thin; */
-  box-shadow: 0px 20px 20px -20px #cacaca;
+  box-shadow: 0px 10px 10px -10px #cacaca;
 
   cursor: pointer;
 }
