@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from "react-router-hash-link";
 import './navBar.css';
 
 import Headroom from 'react-headroom';
@@ -14,24 +15,24 @@ function NavBar(){
                         <img src={logo} id='logo'></img>
                         <div class='row' id='navBtnRow'>
                             <div class='col-3 navButton'>
-                                <a href='#coverArea'>
+                                <Link to='/#coverArea'  >
                                     Home
-                                </a>
+                                </Link>
                             </div>
                             <div class='col-3 navButton'>
-                                <a href='#aboutArea'>
+                                <Link to='/#aboutArea' >
                                     About
-                                </a>
+                                </Link>
                             </div>
                             <div class='col-3 navButton'>
-                                <a href='#gallery'>
+                                <Link to='/#gallery'>
                                     Gallery
-                                </a>
+                                </Link>
                             </div>
                             <div class='col-3 navButton'>
-                                <a href='#contact'>
+                                <Link to='/#contact'>
                                     Contact
-                                </a>
+                                </Link>
                             </div>
                         </div> 
                     </row>

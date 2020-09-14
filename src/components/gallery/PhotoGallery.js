@@ -39,46 +39,46 @@ function PhotoGallery (){
     return(
         
         <div id='photoGallery'>
-            <h1 id='galleryTitle'>Gallery</h1>
+            <h1 class='galleryTitle'>Gallery</h1>
             <div id='galleryNav'>
                 <div class='row'>
                     <div class='col gallNavBtn'>
-                        <Link to="/" style={navBtn} onClick={e => setState(0)}>
+                        <Link to="/gallery/bathroom" style={navBtn} onClick={e => setState(0)}>
                             <p style={selectedStyle( 0)}>
                                 Bathroom
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/fireplace" style={navBtn} onClick={e => setState(1)} >
+                        <Link to="/gallery/fireplace" style={navBtn} onClick={e => setState(1)} >
                             <p style={selectedStyle( 1)}>
                                 Fireplace
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/flooring" style={navBtn} onClick={e => setState(2)}>
+                        <Link to="/gallery/flooring" style={navBtn} onClick={e => setState(2)}>
                             <p style={selectedStyle( 2)}>
                                 Flooring
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/kitchen" style={navBtn} onClick={e => setState(3)}>
+                        <Link to="/gallery/kitchen" style={navBtn} onClick={e => setState(3)}>
                             <p style={selectedStyle( 3)}>
                                 Kitchen
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/misc" style={navBtn} onClick={e => setState(4)}>
+                        <Link to="/gallery/miscellaneous" style={navBtn} onClick={e => setState(4)}>
                             <p style={selectedStyle( 4)}>
                                 Misc
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/outdoor" style={navBtn} onClick={e => setState(5)}>
+                        <Link to="/gallery/outdoor" style={navBtn} onClick={e => setState(5)}>
                             <p style={selectedStyle( 5)}>
                                 Outdoor
                             </p>
@@ -88,13 +88,21 @@ function PhotoGallery (){
             </div>
             <div id='photoArea'>
                 <Switch>
-                    <Route path={["/fireplace"]} component={Fireplace} />
-                    <Route path={["/flooring"]} component={Flooring} />
-                    <Route path={["/kitchen"]} component={Kitchen} />
-                    <Route path={["/misc"]} component={Misc} />
-                    <Route path={["/outdoor"]} component={Outdoor} />
-                    <Route exact path={["/"]} component={Bathroom} />
+                <Route path={["/gallery/bathroom"]} component={Bathroom} />
+                    <Route path={["/gallery/fireplace"]} component={Fireplace} />
+                    <Route path={["/gallery/flooring"]} component={Flooring} />
+                    <Route path={["/gallery/kitchen"]} component={Kitchen} />
+                    <Route path={["/gallery/miscellaneous"]} component={Misc} />
+                    <Route path={["/gallery/outdoor"]} component={Outdoor} />
                 </Switch>
+            </div>
+            <div id='instagram'>
+                <a target='_blank' href='https://www.instagram.com/bernardcustombuild/' rel='noopener noreferrer'>
+                    <i id='instaIcon' class='fab fa-instagram fa-3x'></i>
+                </a>
+                <p id='instaDes'>
+                    Follow us on Instagram!
+                </p>
             </div>
         </div>
     )
