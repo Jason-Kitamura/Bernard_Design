@@ -1,3 +1,35 @@
+#container{
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.galleryCard{
+    border: white solid thin;
+    height: 300px;
+ 
+    /* min-width: 100%; */
+    /* padding: 0; */
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.cardPic{
+    background-image: ('https://www.google.com/url?sa=i&url=https%3A%2F%2Fsisterhoodofstyle.com%2Fno-image-placeholder%2F&psig=AOvVaw2MtGtT-DXUTN8Cqyx98JX7&ust=1600106809310000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCem8Xc5usCFQAAAAAdAAAAABAI');
+    height:80%;
+    width: 100%;
+    border-bottom: white solid thin;
+}
+.cardPic img {
+    height: 100%;
+    width: 100%;
+}
+.cardTitle {
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
 #photoGallery img {
     padding: 2.5px;
     
@@ -9,11 +41,12 @@
     max-width: 100vw;
 }
 #galleryTitle {
+    color: white;
     display: block;
     margin: auto;
     text-align: center;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border-bottom: white solid 2px;
     width: fit-content;
 }

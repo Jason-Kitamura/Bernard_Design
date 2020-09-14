@@ -1,0 +1,56 @@
+#aboutArea{
+    width: 98%;
+    display: block;
+    margin: auto;
+    
+  }
+  #aboutTitle {
+    background-image: url('./assets/WhiteBrickLights.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height : 15vw;
+    width: 100%;
+  }
+  #aboutTitle p {
+    color: #222222;
+    font-size: 6vw;
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin: 5vw;
+    padding-top: 2vw;
+    
+  }
+  #aboutDes{
+    background-color: #ffffffe1;
+    padding: 4vw;
+  }
+  #aboutDes h1 {
+    font-size: 5vw;
+  }
+  #aboutDes p {
+    font-size: 3vw;
+    /* padding: 0 3vw 0 3vw; */
+  }
+  #aboutDes ul {
+    margin-left: 2vw;
+  }
+  #desArea{
+    width: 100%;
+    margin: auto;
+  }
+  #desPhoto {
+    background-image: url('./assets/fireplace1.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and ( min-width: 1000px){
+    #aboutDes h1 {
+      font-size: 40px;
+    }
+    #aboutDes p {
+      font-size: 25px;
+    }
+  }
+  
