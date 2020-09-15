@@ -11,9 +11,6 @@ import ContactForm from './components/contactForm/contactForm';
 import Footer from './components/footer/Footer';
 
 
-
-
-
 function App() {
   
   return (
@@ -35,7 +32,7 @@ function App() {
           
   
           <Footer/>
-                  
+
       </div>
     </Router>
   );

@@ -15,7 +15,6 @@ function PhotoGallery (){
 
     const navBtn = {
         color : 'whitesmoke',
-        fontFamily : 'verdana, Deneva, Tahoma, sans-serif',
         fontWeight : 'bold',
         textAlign : 'center'
     }

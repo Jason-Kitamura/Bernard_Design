@@ -15,22 +15,22 @@ function NavBar(){
                         <img src={logo} id='logo'></img>
                         <div class='row' id='navBtnRow'>
                             <div class='col-3 navButton'>
-                                <Link to='/#coverArea'  >
+                                <Link smooth to='/#coverArea'  >
                                     Home
                                 </Link>
                             </div>
                             <div class='col-3 navButton'>
-                                <Link to='/#aboutArea' >
+                                <Link smooth to='/#aboutArea' >
                                     About
                                 </Link>
                             </div>
                             <div class='col-3 navButton'>
-                                <Link to='/#gallery'>
+                                <Link smooth to='/#gallery'>
                                     Gallery
                                 </Link>
                             </div>
                             <div class='col-3 navButton'>
-                                <Link to='/#contact'>
+                                <Link smooth to='/#contact'>
                                     Contact
                                 </Link>
                             </div>

@@ -2,7 +2,7 @@
     margin: 0;
     height : fit-content;
     
-    background-image: url('./assets/livingRoomSample.jpg');
+    background-image: url('./assets/KitchenCover.jpeg');
     background-position: center;
     background-size: cover;
     padding-top : 75px;
@@ -16,9 +16,8 @@
   }
   #coverTitle {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 5vw;
-    text-shadow: 10px 10px 10px  #555555;
+    text-shadow: 10px 10px 5px  #2e2e2e;
     color: white;
     border: white solid 0.3vw;
     /* box-shadow: 10px 10px 20px 10px#555555; */
@@ -31,6 +30,7 @@
   }
   #coverTitle p {
     font-size: 4vw;
+    font-family: 'Aguafina Script', cursive;
     margin-bottom: 0px;
   }
   #leaf {
@@ -41,20 +41,27 @@
     color: white;
     margin-top: 2vw;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inconsolata';
     font-size: 2vw;
-    text-shadow: 10px 10px 10px  #555555;
+    text-shadow: 10px 10px 5px  #131212;
   
   }
   #coverDes p {
     font-size: 3vw;
     font-weight: bold;
+    font-family: 'Coda';
   }
   #bookBtn{
     margin-top: 1vw;
     background-color: #6d6d6d;
     color: #d6d6d6;
   }
+  #bookBtn p {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+  }
+
   @media screen and (max-width: 800px){
     #coverArea {
       height : fit-content;

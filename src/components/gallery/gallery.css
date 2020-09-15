@@ -1,17 +1,40 @@
 #container{
-    margin: 20px;
+    display: block;
+    margin: auto;
+    padding: 20px;
     margin-bottom: 30px;
+    max-width: 1000px;
 }
 
 .galleryCard{
     border: white solid thin;
-    height: 300px;
- 
+    height: 30vw;
+    width: 30vw;
     /* min-width: 100%; */
     /* padding: 0; */
     display: block;
     margin: auto;
     margin-top: 30px;
+    font-family: 'Dosis';
+    font-weight: Bold;
+}
+@media screen and ( min-width: 1000px){
+    .galleryCard{
+        height : 300px;
+        width: 300px;
+    }
+}
+@media screen and ( max-width: 767px){
+    .galleryCard{
+        width : 45vw;
+        height: 40vw;
+    }
+}
+@media screen and ( max-width: 575px){
+    .galleryCard{
+        width: 90vw;
+        height: 90vw;
+    }
 }
 .cardPic{
     background-image: ('https://www.google.com/url?sa=i&url=https%3A%2F%2Fsisterhoodofstyle.com%2Fno-image-placeholder%2F&psig=AOvVaw2MtGtT-DXUTN8Cqyx98JX7&ust=1600106809310000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCem8Xc5usCFQAAAAAdAAAAABAI');
@@ -37,7 +60,6 @@
 
 #photoGallery{
     color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 100vw;
     min-height: 700px;
 }
@@ -51,6 +73,8 @@
     margin-top: 50px;
     border-bottom: white solid 2px;
     width: fit-content;
+    font-family: 'Special Elite';
+    font-weight: Bold;
 }
 #galleryNav {
     display: block;
@@ -58,16 +82,19 @@
     width: 80%;
     max-width: 1000px;
     text-align: center;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 
 .gallNavBtn {
     width: min-content;
     padding: 0;
-   
+    font-family: 'Dosis';
 }
+.gallNavBtn p {
+    font-family: inherit;
+}
+
 .gallNavBtn:hover {
    
     cursor: pointer;
@@ -87,6 +114,7 @@
     width: fit-content;
     text-align: center;
     color: white;
+    font-family: 'Inconsolata';
 }
 
 @media screen and ( max-width: 700px ){

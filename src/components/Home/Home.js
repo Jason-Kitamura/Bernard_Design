@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { HashLink as Link } from 'react-router-hash-link';
 import './home.css'
 
 import samplePhoto from './assets/kitchenCover.jpg'
@@ -18,7 +18,7 @@ function Home(){
                 <div class='col-md-6'>
                     <p id='coverTitle'>
                         BERNARD
-                        <br/> <p>Design <img id='leaf' src={leaf}></img> Build</p>
+                        <br/> <p>Design  <img id='leaf' src={leaf}></img> Build</p>
                     </p>
                 </div>
                 <div class='col-md-6'>
@@ -35,7 +35,7 @@ function Home(){
                         <br/>(705) 888 0059
                         <br/>
                         <br/> or click 'Book Now' to get in-touch
-                        <br/> <button id='bookBtn'><a href='#contactArea'>Book Now</a></button>
+                        <br/> <button id='bookBtn'><Link smooth to='/#contact'><p>Book Now</p></Link></button>
                     </p>
                 </div>
             </div>
