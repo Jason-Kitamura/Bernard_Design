@@ -2,6 +2,13 @@ import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './gallery.css';
 
+import BathroomPic from './assets/BathroomPic.JPG';
+import FireplacePic from './assets/FireplacePic.JPG';
+import FlooringPic from './assets/FlooringPic.JPG';
+import KitchenPic from './assets/KitchenPic.jpeg';
+import MiscPic from './assets/MiscPic.jpg';
+import OutdoorPic from './assets/OutdoorPic.jpeg';
+
 // import  from 'https://www.lonestarpark.com/wp-content/uploads/2019/04/image--500x500.jpg'
 
 
@@ -14,11 +21,9 @@ function Gallery (){
                 <div class='row'>
                     <div class='col-sm-6 col-md-4'>
                         <Link to="/gallery/bathroom" >
-                            <div id='bathroomCard' class='galleryCard'>
-                                <div class='cardPic'>
-                                    <img src={'https://www.lonestarpark.com/wp-content/uploads/2019/04/image-placeholder-500x500.jpg'}>
-
-                                    </img>
+                            <div class='galleryCard'>
+                                <div id='bathroomCard' class='cardPic'>
+                                    
                                 </div>
                                 <p class='cardTitle'>
                                     Bathroom
@@ -28,12 +33,9 @@ function Gallery (){
                     </div>
                     <div class=' col-sm-6 col-md-4'>
                         <Link to="/gallery/fireplace" >
-                            <div id='fireplaceCard' class='galleryCard'>
-                                <div class='cardPic'>
-                                    <img src={'https://www.lonestarpark.com/wp-content/uploads/2019/04/image-placeholder-500x500.jpg'}>
-
-                                    </img>
-
+                            <div class='galleryCard'>
+                                <div id='fireplaceCard' class='cardPic'>
+                                    
                                 </div>
                                 <p class='cardTitle'>
                                     Fireplace
@@ -43,11 +45,9 @@ function Gallery (){
                     </div>
                     <div class='col-sm-6 col-md-4'>
                         <Link to="/gallery/flooring" >
-                            <div id='flooringCard' class='galleryCard'>
-                                <div class='cardPic'>
-                                    <img src={'https://www.lonestarpark.com/wp-content/uploads/2019/04/image-placeholder-500x500.jpg'}>
-
-                                    </img>
+                            <div class='galleryCard'>
+                                <div id='flooringCard' class='cardPic'>
+                                   
                                 </div>
                                 <p class='cardTitle'>
                                     Flooring
@@ -57,11 +57,9 @@ function Gallery (){
                     </div>
                     <div class='col-sm-6 col-md-4'>
                         <Link to="/gallery/kitchen" >
-                            <div id='kitchenCard' class='galleryCard'>
-                                <div class='cardPic'>
-                                    <img src={'https://www.lonestarpark.com/wp-content/uploads/2019/04/image-placeholder-500x500.jpg'}>
-
-                                    </img>
+                            <div class='galleryCard'>
+                                <div id='kitchenCard' class='cardPic'>
+                                    
                                 </div>
                                 <p class='cardTitle'>
                                 Kitchen
@@ -71,11 +69,9 @@ function Gallery (){
                     </div>
                     <div class='col-sm-6 col-md-4'>
                         <Link to="/gallery/miscellaneous" >
-                            <div id='miscCard' class='galleryCard'>
-                                <div class='cardPic'>
-                                    <img src={'https://www.lonestarpark.com/wp-content/uploads/2019/04/image-placeholder-500x500.jpg'}>
-
-                                    </img>
+                            <div class='galleryCard'>
+                                <div id='miscCard' class='cardPic'>
+                                   
                                 </div>
                                 <p class='cardTitle'>
                                     Miscellaneous
@@ -85,11 +81,9 @@ function Gallery (){
                     </div>
                     <div class='col-sm-6 col-md-4'>
                         <Link to="/gallery/outdoor" >
-                            <div id='outdoorCard' class='galleryCard'>
-                                <div class='cardPic'>
-                                    <img src={'https://www.lonestarpark.com/wp-content/uploads/2019/04/image-placeholder-500x500.jpg'}>
-
-                                    </img>
+                            <div class='galleryCard'>
+                                <div id='outdoorCard' class='cardPic'>
+                                  
                                 </div>
                                 <p class='cardTitle'>
                                     Outdoor

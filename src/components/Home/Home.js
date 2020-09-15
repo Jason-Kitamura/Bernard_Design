@@ -2,27 +2,36 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './home.css'
 
-import samplePhoto from './assets/kitchenCover.jpg'
-import leaf from './assets/leaf.png'
+
+import BernardCard from './assets/BCard.png'
 
 
 function Home(){
 
-    const coverPhoto = {
-        backgroundImage : samplePhoto
-      }
 
     return(
-        <div id='coverArea' style={coverPhoto}>
-            <div class='row'>
-                <div class='col-md-6'>
-                    <p id='coverTitle'>
-                        BERNARD
-                        <br/> <p>Design  <img id='leaf' src={leaf}></img> Build</p>
-                    </p>
+        <div id='coverArea' >
+            <div id='coverRow' class='row'>
+                <div id='leftBar' class='col-4 '>
+                    <div id='infoRow' class=' row'>
+                        <div id='sidePhoto' class='col-2'>
+                            
+                        </div>
+                        <div id='headerBar' class='col-10'>
+                            <img src={BernardCard}></img>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id='photoBar' class='col-8 '>
+                    
+                    
+                </div>
+                {/* <div class='col-md-6'>
+                    <img src={BernardCard}></img>
                 </div>
                 <div class='col-md-6'>
-                    <p id='coverDes'>
+                    {/* <p id='coverDes'>
                         WELCOME
                         <br/>
                         <p>
@@ -36,8 +45,11 @@ function Home(){
                         <br/>
                         <br/> or click 'Book Now' to get in-touch
                         <br/> <button id='bookBtn'><Link smooth to='/#contact'><p>Book Now</p></Link></button>
-                    </p>
-                </div>
+                    </p> */}
+                {/* </div> */}
+            </div>
+            <div id='iconBar' class='row'>
+
             </div>
         </div>
     )

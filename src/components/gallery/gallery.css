@@ -37,10 +37,40 @@
     }
 }
 .cardPic{
-    background-image: ('https://www.google.com/url?sa=i&url=https%3A%2F%2Fsisterhoodofstyle.com%2Fno-image-placeholder%2F&psig=AOvVaw2MtGtT-DXUTN8Cqyx98JX7&ust=1600106809310000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCem8Xc5usCFQAAAAAdAAAAABAI');
+    /* background-image: ('https://www.google.com/url?sa=i&url=https%3A%2F%2Fsisterhoodofstyle.com%2Fno-image-placeholder%2F&psig=AOvVaw2MtGtT-DXUTN8Cqyx98JX7&ust=1600106809310000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCem8Xc5usCFQAAAAAdAAAAABAI'); */
     height:80%;
     width: 100%;
-    border-bottom: white solid thin;
+    /* border-bottom: white solid thin; */
+}
+#bathroomCard {
+    background-image: url('./assets/BathroomPic.JPG');
+    background-position: center;
+    background-size: cover;
+}
+#fireplaceCard {
+    background-image: url('./assets/FireplacePic.JPG');
+    background-position: center;
+    background-size: cover;
+}
+#flooringCard {
+    background-image: url('./assets/FlooringPic.JPG');
+    background-position: center;
+    background-size: cover;
+}
+#kitchenCard {
+    background-image: url('./assets/KitchenPic.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+#miscCard {
+    background-image: url('./assets/MiscPic.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#outdoorCard {
+    background-image: url('./assets/OutdoorPic.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 .cardPic img {
     height: 100%;
