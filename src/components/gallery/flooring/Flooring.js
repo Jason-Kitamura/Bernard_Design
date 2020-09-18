@@ -1,11 +1,13 @@
 import React, {} from 'react';
-import Mason from './Mason';
+import Mason1 from './Mason1';
+import Mason2 from './Mason2';
 
 function Flooring () {
 
     return(
         <div>
-            <Mason/>
+            <Mason1/>
+            <Mason2/>
         </div>
     )
 }

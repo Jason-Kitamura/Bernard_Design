@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
-import Mason from './Mason';
+import Mason from '../bathroom/Mason';
+import Mason1 from './Mason1';
+import Mason2 from "./Mason2";
 
 
 function Fireplace () {
@@ -8,7 +10,8 @@ function Fireplace () {
 
     return(
         <div>
-            <Mason/>
+            <Mason1/>
+            <Mason2/>
         </div>
     )
 }
