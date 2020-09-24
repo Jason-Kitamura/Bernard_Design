@@ -7,9 +7,11 @@
 #contactTitle {
     display: block;
     margin: auto;
+    margin-bottom: 50px;
     color:whitesmoke;
     font-size: 6vh;
-    font-family: 'Slabo', sans-serif;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 0px;
     text-align: center;
     padding-top: 50px;
@@ -21,13 +23,13 @@
     font-size: 4vh;
     padding: 2vw;
     text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 1px;
 }
 #contactForm {
     display: block;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     width: 60%;
     min-width: 300px;
     max-width: 700px;
@@ -74,10 +76,12 @@
 #infoTitle{
     font-size: 40px;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
 #infoDes {
     font-size: 25px;
-    font-family: 'Inconsolata';
+    font-family: 'Josefin Sans', sans-serif;
 }
 @media screen and (max-width: 450px){
     #contactTitle {

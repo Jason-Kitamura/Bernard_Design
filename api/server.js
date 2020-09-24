@@ -36,12 +36,14 @@ app.post('/api/sendEmail', async ( req, res) =>{
     transporter.sendMail( mailOptions, function( err, data){
         if ( err ){
             console.log('Error Occurs', err);
+            res.send('error')
         } else {
             console.log( 'Email sent!!!');
+            res.send('success')
         }
     })
 
-    res.send('hey')
+   
 })
 
 
