@@ -1,4 +1,4 @@
-import pic10 from './assets/IMG_00 (10).jpg';
+import pic10 from './assets/IMG_00 (10).JPG';
 import pic11 from './assets/IMG_00 (11).JPG';
 
 export const photos = [

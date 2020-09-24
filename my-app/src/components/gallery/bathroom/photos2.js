@@ -1,5 +1,5 @@
 import pic4 from './assets/IMG_00 (4).JPG';
-import pic5 from './assets/IMG_00 (5).jpg';
+import pic5 from './assets/IMG_00 (5).JPG';
 import pic6 from './assets/IMG_00 (6).JPG';
 
 

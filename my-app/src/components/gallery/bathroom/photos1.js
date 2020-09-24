@@ -1,6 +1,6 @@
-import pic1 from './assets/IMG_00 (1).JPG';
+import pic1 from './assets/IMG_00 (1).jpg';
 import pic2 from './assets/IMG_00 (2).jpg';
-import pic3 from './assets/IMG_00 (3).JPG';
+import pic3 from './assets/IMG_00 (3).jpg';
 
 
 
