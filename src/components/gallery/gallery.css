@@ -3,7 +3,7 @@
     margin: auto;
     padding: 20px;
     margin-bottom: 30px;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .galleryCard{
@@ -15,13 +15,22 @@
     display: block;
     margin: auto;
     margin-top: 30px;
-    font-family: 'Dosis';
-    font-weight: Bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+
+    /* font-weight: Bold; */
 }
+
 @media screen and ( min-width: 1000px){
     .galleryCard{
         height : 300px;
         width: 300px;
+    }
+}
+@media screen and ( min-width: 1200px){
+    .galleryCard{
+        height : 375px;
+        width: 375px;
     }
 }
 @media screen and ( max-width: 767px){
@@ -100,8 +109,9 @@
     margin-top: 50px;
     border-bottom: white solid 2px;
     width: fit-content;
-    font-family: 'Special Elite';
-    font-weight: Bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 75px;
+    /* font-weight: Bold; */
 }
 #galleryNav {
     display: block;
@@ -116,7 +126,8 @@
 .gallNavBtn {
     width: min-content;
     padding: 0;
-    font-family: 'Dosis';
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 .gallNavBtn p {
     font-family: inherit;
@@ -141,7 +152,8 @@
     width: fit-content;
     text-align: center;
     color: white;
-    font-family: 'Inconsolata';
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 @media screen and ( max-width: 700px ){

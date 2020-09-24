@@ -3,6 +3,7 @@
     max-width: 1200px;
     display: block;
     margin: auto;
+    margin-top: 100vh;
     
   }
   #aboutTitle {
@@ -15,7 +16,7 @@
   }
   #aboutTitle p {
     color: #222222;
-    font-family: 'Special Elite';
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 4vw;
     font-weight: bold;
     text-decoration-line: underline;
@@ -28,14 +29,14 @@
     padding: 4vw;
   }
   #aboutDes h1 {
-    font-family: 'Dosis';
-    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-weight: bold; */
     font-size: 5vw;
   }
   #aboutDes p {
     font-size: 3vw;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
     /* padding: 0 3vw 0 3vw; */
   }
   #aboutDes ul {
