@@ -25,22 +25,22 @@ function ContactForm(){
         }
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         if( name === ''){
-            toast.error('Please Enter Your Name');
+            toast.error('Please Enter Your Name', {position: toast.POSITION.TOP_CENTER});
         } else if ( mail === '' || reg.test(mail) == false){
-            toast.error('Please Enter A Valid Email Address')
+            toast.error('Please Enter A Valid Email Address', {position: toast.POSITION.TOP_CENTER})
         } else if ( message === ''){
-            toast.error('Please Enter A Message')
+            toast.error('Please Enter A Message', {position: toast.POSITION.TOP_CENTER})
         } else {
             const response = await axios.post('http://localhost:5000/api/sendEmail', newEmail );
             console.log('sendign email:', response)
             if ( response.data === 'success'){
-                toast.success('Email Sent!');
+                toast.success('Email Sent!', {position: toast.POSITION.TOP_CENTER});
                 setName('');
                 setEmail('');
                 setPhone('');
                 setMessage('');
             } else if ( response.data ==='error'){
-                toast.error('There was an error sending your message')
+                toast.error('There was an error sending your message', {position: toast.POSITION.TOP_CENTER})
             }
         }
 
@@ -52,10 +52,10 @@ function ContactForm(){
             <p id='contactTitle'>Contact Us</p>
             <p id='contactDes'>We look forward to hearing from you!</p>
             <div id='contactForm'>
-                <input class='contactInput row' type='text' placeholder='Name' value={name} onChange={e => setName( e.target.value )}></input>
+                <input class='contactInput row' type='text' placeholder='Name*' value={name} onChange={e => setName( e.target.value )}></input>
                 <input class='contactInput row' type='text' placeholder='Email*' value={mail} onChange={e => setEmail( e.target.value )}></input>
                 <input class='contactInput row' type='text' placeholder='Phone' value={phone} onChange={e => setPhone( e.target.value )}></input>
-                <textarea class='contactInput row'  type='text' placeholder='Message'  value={message} rows='4' onChange={e => setMessage( e.target.value )}></textarea>
+                <textarea class='contactInput row'  type='text' placeholder='Message*'  value={message} rows='4' onChange={e => setMessage( e.target.value )}></textarea>
                 <button id='contactBtn' onClick={e => sendEmail()}>SEND</button>
             </div>
             <div id='contactInfo'>

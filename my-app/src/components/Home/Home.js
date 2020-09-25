@@ -22,23 +22,16 @@ function Home(){
         backgroundImage: `url(${right1})`,
         opacity:1
     })
-    const [ i, setI ]=useState(0)
 
-    // function leftFadeIn(){
-    //     setLeftOpacity( { opacity: 1 } )
-    // }
-    // function leftFadeOut(){ 
-    //     setLeftOpacity( { opacity: 0} )
-    // }
-
+    const [ leftClass, setLeftClass]=useState('fade-In');
+    const [ rightClass, setRightClass]=useState('fade-In');
+    
    
         function setLeft1(){
-            document.getElementById('leftPhoto').classList.remove('fade-In');
-            document.getElementById('leftPhoto').classList.add('fade-Out');
+            setLeftClass('fade-Out');
              setTimeout(() => {
                 setLeftStyle( {backgroundImage: `url(${left2})`})
-                document.getElementById('leftPhoto').classList.add('fade-In');
-                document.getElementById('leftPhoto').classList.remove('fade-Out');
+                setLeftClass('fade-In');
             }, 500);
             setTimeout( () => {
                 setRight1();
@@ -46,12 +39,10 @@ function Home(){
         }
 
         function setLeft2(){
-            document.getElementById('leftPhoto').classList.remove('fade-In');
-            document.getElementById('leftPhoto').classList.add('fade-Out');
+            setLeftClass('fade-Out')
              setTimeout(() => {
                 setLeftStyle( {backgroundImage: `url(${left3})`})
-                document.getElementById('leftPhoto').classList.remove('fade-Out');
-                document.getElementById('leftPhoto').classList.add('fade-In');
+                setLeftClass('fade-In');
             }, 500);
             setTimeout( () => {
                 setRight2();
@@ -59,12 +50,10 @@ function Home(){
         }
 
         function setLeft3(){
-            document.getElementById('leftPhoto').classList.remove('fade-In');
-            document.getElementById('leftPhoto').classList.add('fade-Out');
+            setLeftClass('fade-Out')
              setTimeout(() => {
                 setLeftStyle( {backgroundImage: `url(${left1})`})
-                document.getElementById('leftPhoto').classList.remove('fade-Out');
-                document.getElementById('leftPhoto').classList.add('fade-In');
+                setLeftClass('fade-In');
             }, 500);
             setTimeout( () => {
                 setRight3();
@@ -72,12 +61,10 @@ function Home(){
         }
 
         function setRight1(){
-            document.getElementById('rightPhoto').classList.remove('fade-In');
-            document.getElementById('rightPhoto').classList.add('fade-Out');
+            setRightClass('fade-Out');
              setTimeout(() => {
                 setRightStyle( {backgroundImage: `url(${right2})`})
-                document.getElementById('rightPhoto').classList.remove('fade-Out');
-                document.getElementById('rightPhoto').classList.add('fade-In');
+                setRightClass('fade-In');
             }, 500);
             setTimeout( () => {
               
@@ -86,12 +73,10 @@ function Home(){
         }
 
         function setRight2(){
-            document.getElementById('rightPhoto').classList.remove('fade-In');
-            document.getElementById('rightPhoto').classList.add('fade-Out');
+            setRightClass('fade-Out');
              setTimeout(() => {
                 setRightStyle( {backgroundImage: `url(${right3})`})
-                document.getElementById('rightPhoto').classList.remove('fade-Out');
-                document.getElementById('rightPhoto').classList.add('fade-In');
+                setRightClass('fade-In');
             }, 500);
             setTimeout( () => {
                 setLeft3();
@@ -99,12 +84,10 @@ function Home(){
         }
 
         function setRight3(){
-            document.getElementById('rightPhoto').classList.remove('fade-In');
-            document.getElementById('rightPhoto').classList.add('fade-Out');
+            setRightClass('fade-Out');
              setTimeout(() => {
                 setRightStyle( {backgroundImage: `url(${right1})`});
-                document.getElementById('rightPhoto').classList.remove('fade-Out');
-                document.getElementById('rightPhoto').classList.add('fade-In');
+                setRightClass('fade-In');
             }, 500);
             setTimeout( () => {
                 setLeft1();
@@ -114,12 +97,8 @@ function Home(){
        useEffect( ()=>{
            setTimeout( () =>{
                 setLeft1();
-           }, 3000)
+           }, 4000)
        },[])
-
-
-
-  
 
 
     return(
@@ -129,10 +108,10 @@ function Home(){
                         <img src={homeLogo} alt='home logo'></img>
                     </div>
                     
-                    <div id='leftPhoto' class='leftPhoto3 fade-In' style={leftStyle}>
+                    <div id='leftPhoto' className={leftClass} style={leftStyle}>
                       
                     </div>
-                    <div id='rightPhoto' class='rightPhoto3 fade-In' style={rightStyle}>
+                    <div id='rightPhoto' className={rightClass} style={rightStyle}>
                         
                     </div>
                     

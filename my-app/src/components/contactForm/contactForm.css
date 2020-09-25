@@ -83,6 +83,20 @@
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.Toastify__toast--error{
+    background: #474747 !important;
+}
+
+.Toastify__toast{
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+.Toastify__progress-bar--error{
+    background-color: #d44a4aad !important;
+}
+.Toastify__progress-bar--success{
+    background-color: #5cc741ad !important;
+}
 @media screen and (max-width: 450px){
     #contactTitle {
         font-size: 30px;

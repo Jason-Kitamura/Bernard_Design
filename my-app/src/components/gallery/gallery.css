@@ -126,11 +126,14 @@
 .gallNavBtn {
     width: min-content;
     padding: 0;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
 
 }
 .gallNavBtn p {
     font-family: inherit;
+    padding: 20px;
 }
 
 .gallNavBtn:hover {
