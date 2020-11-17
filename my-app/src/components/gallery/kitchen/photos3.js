@@ -6,17 +6,23 @@ export const photos = [
     {
       src: pic9,
       width: 4,
-      height: 3
+      height: 3,
+      title: 'Glass Tile Backsplash Installed by Bernard Design and Build', 
+
     },
     {
       src: pic10,
       width: 4,
-      height: 3
+      height: 3,
+      title: 'Glass Tile Installed by Bernard Design and Build', 
+
     },
     {
       src: pic11,
       width: 4,
-      height: 3
+      height: 3,
+      title: 'Tile Installed by Bernard Design and Build', 
+
     },
   ];
   

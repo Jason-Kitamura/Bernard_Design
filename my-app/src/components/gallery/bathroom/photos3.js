@@ -8,17 +8,22 @@ export const photos = [
     {
       src: pic7,
       width: 6,
-      height: 8,      
+      height: 8,    
+      title: 'Tile Installed by Bernard Design and Build',   
     },
     {
       src: pic8,
       width: 6,
       height: 8,
+      title: 'Marble Tile Installed by Bernard Design and Build', 
+
     },
     {
       src: pic9,
       width: 6,
       height: 8,
+      title: 'Tile Installed by Bernard Design and Build', 
+
     },
   ];
   

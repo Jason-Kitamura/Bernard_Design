@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
@@ -12,6 +12,10 @@ import Footer from './components/footer/Footer';
 
 
 function App() {
+
+  const [ state, setState ] = useState(0);
+
+
   
   return (
     <Router>
@@ -20,11 +24,13 @@ function App() {
           <NavBar/>
 
           <Switch>
-            <Route path={["/gallery"]} component={PhotoGallery} />
+            <Route path={["/gallery"]} >
+                <PhotoGallery state={state} setState={setState}/>
+            </Route>
             <Route path={['/']}>
                 <Home/>
                 <About/>
-                <Gallery/>
+                <Gallery setState={setState}/>
                 <ContactForm/>
             </Route>
           </Switch>

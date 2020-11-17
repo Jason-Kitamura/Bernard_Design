@@ -9,21 +9,19 @@ export const photos = [
       src: pic1,
       width: 6,
       height: 8,  
-      sizes: ["(max-width: 480px) 45vw, "]    
+      title: 'Tile Installed by Bernard Design and Build', 
     },
     {
       src: pic2,
       width: 6,
       height: 8,
-      sizes: ["(max-width: 480px) 45vw, "]    
-
+      title: 'Tile Installed by Bernard Design and Build',
     },
     {
       src: pic3,
       width: 6,
       height: 8,
-      sizes: ["(max-width: 480px) 100vw, "]    
-
+      title: 'Tile Installed by Bernard Design and Build', 
     },
   ];
   

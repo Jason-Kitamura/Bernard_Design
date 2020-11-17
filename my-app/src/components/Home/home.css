@@ -27,11 +27,11 @@
   margin: auto;
   height: 500px;
   width: auto;
- 
 }
 #leftPhoto{
   position: absolute;
   top: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -118,6 +118,9 @@
   #desBar {
     font-size: 20px;
     height: 80px;
+  }
+  #homeLogo img {
+    height: 400px;
   }
 }
  

@@ -48,42 +48,12 @@
 .cardPic{
     height:80%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
     /* border-bottom: white solid thin; */
 }
-#bathroomCard {
-    background-image: url('./assets/BathroomPic.JPG');
-    background-position: center;
-    background-size: cover;
-}
-#fireplaceCard {
-    background-image: url('./assets/FireplacePic.JPG');
-    background-position: center;
-    background-size: cover;
-}
-#flooringCard {
-    background-image: url('./assets/FlooringPic.JPG');
-    background-position: center;
-    background-size: cover;
-}
-#kitchenCard {
-    background-image: url('./assets/KitchenPic.jpeg');
-    background-position: center;
-    background-size: cover;
-}
-#miscCard {
-    background-image: url('./assets/MiscPic.jpg');
-    background-position: center;
-    background-size: cover;
-}
-#outdoorCard {
-    background-image: url('./assets/OutdoorPic.jpeg');
-    background-position: center;
-    background-size: cover;
-}
-.cardPic img {
-    height: 100%;
-    width: 100%;
-}
+
+
 .cardTitle {
     color: white;
     text-align: center;
@@ -119,7 +89,11 @@
     width: 80%;
     max-width: 1000px;
     text-align: center;
-    font-weight: bold;    
+    /* font-weight: bold;     */
+}
+#galNavMobile{
+    visibility: hidden;
+    height: 0px;
 }
 
 
@@ -127,23 +101,33 @@
     width: min-content;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 30px;
 
 }
 .gallNavBtn p {
     font-family: inherit;
-    padding: 20px;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 10px 5px 20px 5px;
+    padding-bottom: 20px;
+    border-bottom: rgba(255, 255, 255, 0) solid thin;
+    transition: 0.5s;
+    /* padding: 20px; */
 }
 
-.gallNavBtn:hover {
-   
+.gallNavBtn p:hover {
+    padding-bottom: 0px;
+    border-bottom: white solid thin;
+    font-weight: bold;
     cursor: pointer;
    
 }
 #photoArea{
     display: block;
     margin: auto;
+    max-width: 1200px;
 }
 
 .css-1cm5myo{
@@ -155,8 +139,45 @@
     width: fit-content;
     text-align: center;
     color: white;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+}
 
+.react-images__footer__caption {
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    #galleryNav{
+        visibility: hidden;
+        height: 0px;
+        margin: 0;
+    }
+    #galNavMobile{
+        display: block;
+        margin: auto;
+        visibility: visible;
+        height: fit-content;
+        width: 80vw;
+        font-size: 25px;   
+        font-family: 'Josefin Sans', sans-serif;
+     }
+     .react-images__footer__caption {
+        font-size: 30px
+    }
+}
+@media screen and (max-width: 450px){
+
+    #galNavMobile{
+        font-size: 15px;   
+     }
+     .react-images__footer__caption {
+        font-size: 15px
+    }
 }
 
 @media screen and ( max-width: 700px ){
@@ -165,5 +186,11 @@
     }
     #galleryTitle{
         font-size: 30px;
+    }
+    #instagram {
+        font-size: 20px;
+    }
+    .react-images__footer__caption {
+        font-size: 25px
     }
 }
