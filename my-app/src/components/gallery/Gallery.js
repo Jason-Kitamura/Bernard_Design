@@ -10,14 +10,8 @@ import miscPic from './assets/MiscPic.jpg';
 import outdoorPic from './assets/OutdoorPic.jpeg';
 
 
-import bath2 from './assets/bathroom/bath2.jpg';
-import bath3 from './assets/bathroom/bath3.jpg';
-import bath4 from './assets/bathroom/bath4.JPG';
-import bath5 from './assets/bathroom/bath5.JPG';
-
 import instaIcon from './assets/BDBinstagramIcon.png';
 
-// import  from 'https://www.lonestarpark.com/wp-content/uploads/2019/04/image--500x500.jpg'
 
 
 function Gallery (props){
@@ -29,30 +23,6 @@ function Gallery (props){
     const [ miscStyle, setMiscStyle ] = useState({ backgroundImage: `url(${miscPic})`});
     const [ outdoorStyle, setOutdoorStyle ] = useState({ backgroundImage: `url(${outdoorPic})`});
 
-    // function bathroomSlideshow (){
-    //     console.log('mouse is over bathroom');
-    //     setBathroomStyle( {backgroundImage: `url(${bath2})`})
-    //     // e.target.style.backgroundImage = `url(${bath2})`;
-    //     setTimeout( () =>{
-    //         setBathroomStyle({ backgroundImage: `url(${bath2})`});
-    //     },500);
-    //     setTimeout( () =>{
-    //         setBathroomStyle({ backgroundImage: `url(${bath3})`});
-    //     },1000);
-    //     setTimeout( () =>{
-    //         setBathroomStyle({ backgroundImage: `url(${bath4})`});
-    //     },1500);
-    //     setTimeout( () =>{
-    //         setBathroomStyle({ backgroundImage: `url(${bath5})`});
-    //     },2000);
-    //     setTimeout( () =>{
-    //         setBathroomStyle({ backgroundImage: `url(${bathroomPic})`});
-    //     },2500);
-        
-    // }
-    // function restoreBathroom(){
-    //     setBathroomStyle( { backgroundImage: `url(${bathroomPic})`})
-    // }
 
     return(  
         <div id='gallery'>
@@ -74,7 +44,7 @@ function Gallery (props){
                     <div class=' col-sm-6 col-md-4'>
                         <Link to="/gallery/fireplace" >
                             <div class='galleryCard' onClick={e => props.setState(1)}>
-                                <div id='fireplaceCard' class='cardPic' style={flooringStyle} >
+                                <div id='fireplaceCard' class='cardPic' style={fireplaceStyle} >
                                     
                                 </div>
                                 <p class='cardTitle'>
@@ -86,7 +56,7 @@ function Gallery (props){
                     <div class='col-sm-6 col-md-4'>
                         <Link to="/gallery/flooring" >
                             <div class='galleryCard'  onClick={e => props.setState(2)}>
-                                <div id='flooringCard' class='cardPic' style={fireplaceStyle}>
+                                <div id='flooringCard' class='cardPic' style={flooringStyle}>
                                    
                                 </div>
                                 <p class='cardTitle'>
