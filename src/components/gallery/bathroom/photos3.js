@@ -1,6 +1,6 @@
-import pic7 from './assets/IMG_00 (7).JPG';
-import pic8 from './assets/IMG_00 (8).JPG';
-import pic9 from './assets/IMG_00 (9).JPG';
+// import pic7 from './assets/IMG_00 (7).JPG';
+// import pic8 from './assets/IMG_00 (8).JPG';
+// import pic9 from './assets/IMG_00 (9).JPG';
 
 
 
