@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './gallery.css';
 
-import bathroomPic from './assets/BathroomPic.JPG';
-import fireplacePic from './assets/FireplacePic.JPG';
-import flooringPic from './assets/FlooringPic.JPG';
-import kitchenPic from './assets/KitchenPic.jpeg';
+import bathroomPic from './assets/BathroomPic.jpg';
+import fireplacePic from './assets/FireplacePic.jpg';
+import flooringPic from './assets/FlooringPic.jpg';
+import kitchenPic from './assets/KitchenPic.jpg';
 import miscPic from './assets/MiscPic.jpg';
 import outdoorPic from './assets/OutdoorPic.jpg';
 
