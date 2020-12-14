@@ -7,7 +7,7 @@ import fireplacePic from './assets/FireplacePic.JPG';
 import flooringPic from './assets/FlooringPic.JPG';
 import kitchenPic from './assets/KitchenPic.jpeg';
 import miscPic from './assets/MiscPic.jpg';
-import outdoorPic from './assets/OutdoorPic.jpeg';
+import outdoorPic from './assets/OutdoorPic.jpg';
 
 
 import instaIcon from './assets/BDBinstagramIcon.png';
