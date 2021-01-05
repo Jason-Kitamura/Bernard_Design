@@ -1,5 +1,5 @@
 import pic1 from'./assets/IMG_01 (1).jpg';
-import pic2 from'./assets/IMG_01 (12).jpeg';
+import pic2 from'./assets/IMG_01 (12).jpg';
 import pic3 from'./assets/IMG_01 (3).jpg';
 export const photos = [
     {

@@ -1,4 +1,4 @@
-import pic4 from'./assets/IMG_05 (4).jpeg';
+import pic4 from'./assets/IMG_05 (4).jpg';
 import pic5 from'./assets/IMG_05 (5).jpg';
 import pic6 from'./assets/IMG_05 (6).jpg';
 
