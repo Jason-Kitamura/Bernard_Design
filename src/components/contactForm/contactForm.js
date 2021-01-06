@@ -16,6 +16,7 @@ function ContactForm(){
     const [ message, setMessage ] = useState('');
 
     async function sendEmail(e){
+        e.preventDefault();
         console.log( 'sending  ', name, mail, phone );
         const newEmail = {
             name: name,
@@ -23,6 +24,10 @@ function ContactForm(){
             phone: phone,
             message: message,
         }
+        setName(e.target.name);
+        setEmail(e.target.email);
+        setPhone(e.target.phone);
+        setMessage(e.target.message);
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         if( name === ''){
             toast.error('Please Enter Your Name', {position: toast.POSITION.TOP_CENTER});
@@ -38,13 +43,15 @@ function ContactForm(){
             }, (error) => {
                 console.log(error.text);
             });
+            toast.success('Email Sent!', {position: toast.POSITION.TOP_CENTER});
+            // setName('');
+            // setEmail('');
+            // setPhone('');
+            // setMessage('');
+            e.target.reset();
+            console.log('after sent info', name, mail, phone)
         }
-        toast.success('Email Sent!', {position: toast.POSITION.TOP_CENTER});
-        setName('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-        e.target.reset();
+        
     }
     
 
