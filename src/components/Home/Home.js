@@ -117,7 +117,7 @@ function Home(){
                     
                 </div>
                 <div id='desBar'>
-                    Interior Finishes & Custon Landscapes
+                    Interior Finishes & Custom Landscapes
                     <br/> ... we design & build both!
                 </div>
                 
