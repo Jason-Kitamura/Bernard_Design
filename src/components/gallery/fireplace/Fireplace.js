@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import Mason from '../bathroom/Mason';
 import Mason1 from './Mason1';
 import Mason2 from "./Mason2";
 
