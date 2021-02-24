@@ -9,7 +9,7 @@ import Kitchen from './kitchen/Kitchen';
 import Misc from './misc/Misc';
 import Outdoor from './outdoor/Outdoor';
 
-import instaIcon from './assets/BDBinstagramIcon.png';
+import instaLeaf from './assets/instaLeafPNG.png';
 
 
 function PhotoGallery (props){
@@ -149,12 +149,7 @@ function PhotoGallery (props){
                 </Switch>
             </div>
             <div id='instagram'>
-                <a target='_blank' href='https://www.instagram.com/bernardcustombuild/' rel='noopener noreferrer'>
-                    <img src={instaIcon} id='instaIcon' alt='instaIcon'></img>
-                </a>
-                <p id='instaDes'>
-                    Follow us on Instagram!
-                </p>
+                <img src={instaLeaf}></img>
             </div>
         </div>
     )

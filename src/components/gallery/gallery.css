@@ -66,6 +66,7 @@
 
 #photoGallery{
     color: whitesmoke;
+    margin-top: 100px;
     /* max-width: 100vw;
     min-height: 700px; */
 }
@@ -134,13 +135,15 @@
     max-height: 70vh !important;
 }
 #instagram {
+    width: 100%;
+    height: 300px;
+    
+}
+#instagram img{
+    height: 250px;
+    width: auto;
     display: block;
-    margin: 30px auto 30px auto;
-    width: fit-content;
-    text-align: center;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
+    margin: auto;
 }
 
 .react-images__footer__caption {

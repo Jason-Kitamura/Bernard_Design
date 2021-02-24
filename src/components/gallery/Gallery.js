@@ -8,6 +8,7 @@ import flooringPic from './assets/FlooringPic.jpg';
 import kitchenPic from './assets/KitchenPic.jpg';
 import miscPic from './assets/MiscPic.jpg';
 import outdoorPic from './assets/OutdoorPic.jpg';
+import instaLeaf from './assets/instaLeafPNG.png';
 
 
 import instaIcon from './assets/BDBinstagramIcon.png';
@@ -104,12 +105,7 @@ function Gallery (props){
                 </div>
             </div>
             <div id='instagram'>
-                <a target='_blank' href='https://www.instagram.com/bernardcustombuild/' rel='noopener noreferrer'>
-                    <img id='instaIcon' src={instaIcon} alt='instagram icon'></img>
-                </a>
-                <p id='instaDes'>
-                    Follow us on Instagram!
-                </p>
+                <img src={instaLeaf}></img>
             </div>
         </div>
     )

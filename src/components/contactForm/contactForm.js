@@ -1,11 +1,12 @@
 import React, { useState} from "react";
 import './contactForm.css'
-
+import logo from './assets/bernardLogo.png';
 import emailjs from 'emailjs-com';
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 toast.configure();
+
 
 
 function ContactForm(){
@@ -58,24 +59,34 @@ function ContactForm(){
     return(
         <div id='contact'>
             <p id='contactTitle'>Contact Us</p>
-            <p id='contactDes'>We look forward to hearing from you!</p>
+            <div id='contactGrid'>
+                <div id='contactLeft'>
+                    <img src={logo}></img>
+                </div>
+                <div id='contactRight'>
+                    
+                    <p id='contactDes'>Send us a Note!</p>
 
-            <form id='contactForm' onSubmit={sendEmail}>
-                <input class='contactInput row' type='text' placeholder='Name*' name="name" onChange={e => setName(e.target.value)}></input>
-                <input class='contactInput row' type='email' placeholder='Email*' name="email" onChange={e => setEmail(e.target.value)}></input>
-                <input class='contactInput row' type='text' placeholder='Phone' name="phone" onChange={e => setPhone(e.target.value)}></input>
-                <textarea class='contactInput row'  type='text' placeholder='Message*' name="message" rows='4' onChange={e => setMessage(e.target.value)}></textarea>
-                <input id='contactBtn' type='submit' value='SEND'></input>
-            </form>
+                    <form id='contactForm' onSubmit={sendEmail}>
+                        <input class='contactInput row' type='text' placeholder='Name*' name="name" onChange={e => setName(e.target.value)}></input>
+                        <input class='contactInput row' type='email' placeholder='Email*' name="email" onChange={e => setEmail(e.target.value)}></input>
+                        <input class='contactInput row' type='text' placeholder='Phone' name="phone" onChange={e => setPhone(e.target.value)}></input>
+                        <textarea class='contactInput row'  type='text' placeholder='Message*' name="message" rows='4' onChange={e => setMessage(e.target.value)}></textarea>
+                        <input id='contactBtn' type='submit' value='SEND'></input>
+                    </form>
 
-            <div id='contactInfo'>
-                <p id='infoTitle'> Bernard Design Build</p>
-                <p id='infoDes'>
-                         Grayson Bernard
-                    <br/>bernardbuild@gmail.com
-                    <br/>(705) 888-0059
-                </p>
+                    <div id='contactInfo'>
+                        <p id='infoTitle'> Bernard Design Build</p>
+                        <p id='infoDes'>
+                                Grayson Bernard
+                            <br/>bernardbuild@gmail.com
+                            <br/>(705) 888-0059
+                        </p>
+                    </div>
+                </div>
+
             </div>
+           
         </div>
     )
 }

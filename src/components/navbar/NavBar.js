@@ -1,6 +1,6 @@
 import React from 'react';
-import { HashLink as Link } from "react-router-hash-link";
-import Headroom from 'react-headroom';
+import { NavHashLink as Link} from "react-router-hash-link";
+
 
 import './navBar.css';
 
@@ -18,16 +18,16 @@ function NavBar(){
 
     return(
         <div id='navArea'>
-            <Headroom>
+           
                 <navBar id='navBar' class='navbar'>
                     
-                    <Link smooth to='/#coverArea'  >
+                    <Link smooth activeClassName='navSelected' to='/#coverArea'  >
                         <img src={logo} id='logo'></img>
                     </Link>
             
                     <div class='row' id='navBtnRow'>
                         <div id='homeNavBtn' class='col navButton'>
-                            <Link smooth to='/#coverArea'  >
+                            <Link to='/#coverArea'  >
                                 Home
                             </Link>
                         </div>
@@ -94,7 +94,7 @@ function NavBar(){
                         </ul>
                     </div>
                 </navBar>
-            </Headroom>
+           
         </div>
     )
 }
