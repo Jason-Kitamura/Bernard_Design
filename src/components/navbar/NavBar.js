@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavHashLink as Link} from "react-router-hash-link";
+// import { NavHashLink as Link} from "react-router-hash-link";
+import {NavLink as Link} from 'react-router-dom';
 
 
 import './navBar.css';
@@ -21,28 +22,28 @@ function NavBar(){
            
                 <navBar id='navBar' class='navbar'>
                     
-                    <Link smooth activeClassName='navSelected' to='/#coverArea'  >
+                    <Link smooth to='/'  >
                         <img src={logo} id='logo'></img>
                     </Link>
             
                     <div class='row' id='navBtnRow'>
                         <div id='homeNavBtn' class='col navButton'>
-                            <Link to='/#coverArea'  >
+                            <Link to='/' activeClassName='navSelected' >
                                 Home
                             </Link>
                         </div>
                         <div  id='aboutNavBtn' class='col navButton'>
-                            <Link smooth to='/#aboutArea' >
+                            <Link smooth to='/about' activeClassName='navSelected' >
                                 About
                             </Link>
                         </div>
                         <div id='galleryNavBtn' class='col navButton'>
-                            <Link smooth to='/#gallery'>
+                            <Link smooth to='/gallery' activeClassName='navSelected'>
                                 Gallery
                             </Link>
                         </div>
                         <div id='contactNavBtn' class='col navButton'>
-                            <Link smooth to='/#contact'>
+                            <Link smooth to='/contact' activeClassName='navSelected'>
                                 Contact
                             </Link>
                         </div>

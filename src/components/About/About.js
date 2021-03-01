@@ -87,9 +87,6 @@ function About(){
 
     return(
         <div id='aboutArea'>
-          <h1 id='aboutTitle'>
-            About Us
-          </h1>
           <div id='aboutGrid'>
             <div id='aboutSlide'>
             <div id='slideShow' className={fade} style={slidePhoto}>
@@ -121,6 +118,9 @@ function About(){
                     </ul>
                   </p>
           </div>
+          <div id='aboutFooter'>
+                    About Us
+                </div>
           </div>
           
             {/* <div id='aboutTitle'>

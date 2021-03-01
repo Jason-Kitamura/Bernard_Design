@@ -116,7 +116,7 @@ function Home(){
                     </div>
                     
                 </div>
-                <div id='desBar'>
+                <div class='desBar'>
                     Interior Finishes & Custom Landscapes
                     <br/> ... we design & build both!
                 </div>

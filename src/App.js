@@ -24,20 +24,22 @@ function App() {
           <NavBar/>
 
           <Switch>
-            <Route path={["/gallery"]} >
+            <Route path={["/about"]} >
+                <About/>
+            </Route>
+            <Route path={["/photogallery"]} >
                 <PhotoGallery state={state} setState={setState}/>
             </Route>
-            <Route path={['/']}>
-                <Home/>
-                <About/>
+            <Route path={["/gallery"]} >
                 <Gallery setState={setState}/>
+            </Route>
+            <Route path={["/contact"]} >
                 <ContactForm/>
             </Route>
+            <Route path={["/"]} >
+                <Home/>
+            </Route>
           </Switch>
-          
-          
-  
-          <Footer/>
 
       </div>
     </Router>

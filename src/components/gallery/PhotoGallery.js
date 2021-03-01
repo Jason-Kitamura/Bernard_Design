@@ -45,42 +45,42 @@ function PhotoGallery (props){
             <div id='galleryNav'>
                 <div class='row'>
                     <div class='col gallNavBtn'>
-                        <Link to="/gallery/bathroom" style={navBtn} onClick={e => props.setState(0)}>
+                        <Link to="/photogallery/bathroom" style={navBtn} onClick={e => props.setState(0)}>
                             <p style={selectedStyle( 0)}>
                                 Bathroom
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/gallery/fireplace" style={navBtn} onClick={e => props.setState(1)} >
+                        <Link to="/photogallery/fireplace" style={navBtn} onClick={e => props.setState(1)} >
                             <p style={selectedStyle( 1)}>
                                 Fireplace
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/gallery/flooring" style={navBtn} onClick={e => props.setState(2)}>
+                        <Link to="/photogallery/flooring" style={navBtn} onClick={e => props.setState(2)}>
                             <p style={selectedStyle( 2)}>
                                 Flooring
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/gallery/kitchen" style={navBtn} onClick={e => props.setState(3)}>
+                        <Link to="/photogallery/kitchen" style={navBtn} onClick={e => props.setState(3)}>
                             <p style={selectedStyle( 3)}>
                                 Kitchen
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/gallery/miscellaneous" style={navBtn} onClick={e => props.setState(4)}>
+                        <Link to="/photogallery/miscellaneous" style={navBtn} onClick={e => props.setState(4)}>
                             <p style={selectedStyle( 4)}>
                                 Misc
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtn'>
-                        <Link to="/gallery/outdoor" style={navBtn} onClick={e => props.setState(5)}>
+                        <Link to="/photogallery/outdoor" style={navBtn} onClick={e => props.setState(5)}>
                             <p style={selectedStyle( 5)}>
                                 Outdoor
                             </p>
@@ -92,21 +92,21 @@ function PhotoGallery (props){
             <div id='galNavMobile'>
                 <div  id='galNavRow1' class='row galNavRow'>
                     <div class='col gallNavBtnMobile'>
-                        <Link to="/gallery/bathroom" style={navBtn} onClick={e => props.setState(0)}>
+                        <Link to="/photogallery/bathroom" style={navBtn} onClick={e => props.setState(0)}>
                             <p style={selectedStyle( 0)}>
                                 Bathroom
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtnMobile'>
-                        <Link to="/gallery/fireplace" style={navBtn} onClick={e => props.setState(1)} >
+                        <Link to="/photogallery/fireplace" style={navBtn} onClick={e => props.setState(1)} >
                             <p style={selectedStyle( 1)}>
                                 Fireplace
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtnMobile'>
-                        <Link to="/gallery/flooring" style={navBtn} onClick={e => props.setState(2)}>
+                        <Link to="/photogallery/flooring" style={navBtn} onClick={e => props.setState(2)}>
                             <p style={selectedStyle( 2)}>
                                 Flooring
                             </p>
@@ -115,21 +115,21 @@ function PhotoGallery (props){
                 </div>  
                 <div  id='galNavRow2' class='row galNavRow'>
                     <div class='col gallNavBtnMobile'>
-                        <Link to="/gallery/kitchen" style={navBtn} onClick={e => props.setState(3)}>
+                        <Link to="/photogallery/kitchen" style={navBtn} onClick={e => props.setState(3)}>
                             <p style={selectedStyle( 3)}>
                                 Kitchen
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtnMobile'>
-                        <Link to="/gallery/miscellaneous" style={navBtn} onClick={e => props.setState(4)}>
+                        <Link to="/photogallery/miscellaneous" style={navBtn} onClick={e => props.setState(4)}>
                             <p style={selectedStyle( 4)}>
                                 Misc
                             </p>
                         </Link>
                     </div>
                     <div class='col gallNavBtnMobile'>
-                        <Link to="/gallery/outdoor" style={navBtn} onClick={e => props.setState(5)}>
+                        <Link to="/photogallery/outdoor" style={navBtn} onClick={e => props.setState(5)}>
                             <p style={selectedStyle( 5)}>
                                 Outdoor
                             </p>
@@ -140,12 +140,12 @@ function PhotoGallery (props){
 
             <div id='photoArea'>
                 <Switch>
-                <Route path={["/gallery/bathroom"]} component={Bathroom} />
-                    <Route path={["/gallery/fireplace"]} component={Fireplace} />
-                    <Route path={["/gallery/flooring"]} component={Flooring} />
-                    <Route path={["/gallery/kitchen"]} component={Kitchen} />
-                    <Route path={["/gallery/miscellaneous"]} component={Misc} />
-                    <Route path={["/gallery/outdoor"]} component={Outdoor} />
+                <Route path={["/photogallery/bathroom"]} component={Bathroom} />
+                    <Route path={["/photogallery/fireplace"]} component={Fireplace} />
+                    <Route path={["/photogallery/flooring"]} component={Flooring} />
+                    <Route path={["/photogallery/kitchen"]} component={Kitchen} />
+                    <Route path={["/photogallery/miscellaneous"]} component={Misc} />
+                    <Route path={["/photogallery/outdoor"]} component={Outdoor} />
                 </Switch>
             </div>
             <div id='instagram'>

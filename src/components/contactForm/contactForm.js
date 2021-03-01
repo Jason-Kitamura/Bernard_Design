@@ -58,7 +58,6 @@ function ContactForm(){
 
     return(
         <div id='contact'>
-            <p id='contactTitle'>Contact Us</p>
             <div id='contactGrid'>
                 <div id='contactLeft'>
                     <img src={logo}></img>
@@ -85,6 +84,9 @@ function ContactForm(){
                     </div>
                 </div>
 
+            </div>
+            <div id='contactFooter'>
+                <p>Contact Us</p>
             </div>
            
         </div>

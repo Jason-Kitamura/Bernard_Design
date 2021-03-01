@@ -27,8 +27,57 @@ function Gallery (props){
 
     return(  
         <div id='gallery'>
-            <h1 class='galleryTitle'>Gallery</h1>
-            <div id='container'>
+            <div id='galleryGrid'>
+                <div class='galleryCell' onClick={e => props.setState(0)}>
+                    <Link to="/photogallery/bathroom" >
+                        <div class='cardPic' style={bathroomStyle}></div>
+                        <div class='cardTitle'>
+                            <p>Bathroom</p>
+                        </div> 
+                    </Link>
+                </div>
+                <div class='galleryCell'>
+                    <Link to="/photogallery/bathroom" >
+                        <div class='cardPic' style={fireplaceStyle}></div>
+                        <div class='cardTitle'>
+                            <p>Fireplace</p>
+                        </div> 
+                    </Link>
+                </div>
+                <div class='galleryCell'>
+                <Link to="/photogallery/bathroom" >
+                        <div class='cardPic' style={flooringStyle}></div>
+                        <div class='cardTitle'>
+                            <p>Flooring</p>
+                        </div> 
+                    </Link>
+                </div>
+                <div class='galleryCell'>
+                <Link to="/photogallery/bathroom" >
+                        <div class='cardPic' style={kitchenStyle}></div>
+                        <div class='cardTitle'>
+                            <p>Kitchen</p>
+                        </div> 
+                    </Link>
+                </div>
+                <div class='galleryCell'>
+                <Link to="/photogallery/bathroom" >
+                        <div class='cardPic' style={miscStyle}></div>
+                        <div class='cardTitle'>
+                            <p>Misc</p>
+                        </div> 
+                    </Link>
+                </div>
+                <div class='galleryCell'>
+                <Link to="/photogallery/bathroom" >
+                        <div class='cardPic' style={outdoorStyle}></div>
+                        <div class='cardTitle'>
+                            <p>Outdoor</p>
+                        </div> 
+                    </Link>
+                </div>
+            </div>
+            {/* <div id='container'>
                 <div class='row'>
                     <div class='col-sm-6 col-md-4'>
                         <Link to="/gallery/bathroom" >
@@ -103,9 +152,15 @@ function Gallery (props){
                         </Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div id='instagram'>
                 <img src={instaLeaf}></img>
+            </div>
+            <div id='galleryFooter'>
+                <p>
+                    Gallery
+                </p>
+
             </div>
         </div>
     )
