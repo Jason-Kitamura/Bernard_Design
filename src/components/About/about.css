@@ -23,8 +23,11 @@
 }
 #aboutDes{
   color: rgb(218, 218, 218);
-  margin: 25px;
-  margin-left: 100px;
+  padding: 25px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  overflow-y: scroll;
+
 }
 .fade-In{
   animation: fadeIn 0.55s;
@@ -49,17 +52,92 @@
     opacity: 0;
   }
 }
+#aboutLeaf {
+  position: fixed;
+  bottom: -30px;
+  left: 0px;
+  height: 300px;
+  animation: leafDropAbout 3.5s;   
+}
+#aboutLeaf img{
+  height: 250px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+@keyframes leafDropAbout{
+  from {
+    bottom: 1000px;
+    transform: rotateY(180deg);
+  }
+  to {
+    bottom: -30px;
+    transform: rotateY(360deg);
+  }
+}
 #aboutFooter{
   height: 100px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.671);
+  background-color: rgba(255, 255, 255, 0.767);
   color: rgb(97, 97, 97);
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   padding-top: 10px;
   font-size: 50px;
   font-weight: 550;
+  animation: footerBackground 0.5s;
+}
+#aboutFooter p{
+  box-shadow: 0px 15px 10px -15px #111; 
+  width: fit-content;
+  display: block;
+  margin: auto;
+  animation: footerText 2s;
+}
+@media screen and (max-width: 600px){
+  #aboutArea{
+    padding-top: 50px;
+    height: fit-content;
+  }
+  #aboutGrid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 30vh 100vh;
+    margin-bottom: 100px;
+  }
+  #aboutDes{
+    overflow-y: unset;
+    margin-bottom: 100px;
+    height: fit-content;
+  }
+  #aboutLeaf {
+    position: absolute;
+    width: fit-content;
+    top: 25vh;
+    right: 0px;
+    left: auto;
+    height: fit-content;
+    animation: leafDropAbout 3s;   
+  }
+  #aboutLeaf img{
+    height: 125px;
+    width: auto;
+    margin: 0;
+  }
+  @keyframes leafDropAbout{
+    from {
+      top: -200px;
+      transform: rotateY(180deg);
+    }
+    to {
+      top: 25vh;
+      transform: rotateY(360deg);
+    }
+  }
+  #aboutFooter{
+    height: 75px;
+    font-size: 35px;
+  }
 }

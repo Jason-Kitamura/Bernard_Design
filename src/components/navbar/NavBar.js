@@ -60,7 +60,7 @@ function NavBar(){
                                     </a>
                                 </div>
                                 <div class='col-4'>
-                                    <Link smooth to='/#contact'>
+                                    <Link smooth to='/contact'>
                                         <img src={messageIcon}></img>
                                     </Link>
                                 </div>
@@ -72,22 +72,22 @@ function NavBar(){
                     </div>
                     <div id='dropMenu' >
                         <ul>
-                            <Link smooth to='/#coverArea' onClick={ e => toggleDropMenu()} >
+                            <Link smooth to='/' onClick={ e => toggleDropMenu()} >
                                 <li>
                                     Home
                                 </li>
                             </Link>
-                            <Link smooth to='/#aboutArea' onClick={ e => toggleDropMenu()} >
+                            <Link smooth to='/about' onClick={ e => toggleDropMenu()} >
                                 <li>
                                     About
                                 </li>
                             </Link>
-                            <Link smooth to='/#gallery' onClick={ e => toggleDropMenu()} >
+                            <Link smooth to='/gallery' onClick={ e => toggleDropMenu()} >
                                 <li>
                                     Gallery
                                 </li>
                             </Link>
-                            <Link smooth to='/#contact' onClick={ e => toggleDropMenu()} >
+                            <Link smooth to='/contact' onClick={ e => toggleDropMenu()} >
                                 <li>
                                     Contact
                                 </li>

@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import './contactForm.css'
-import logo from './assets/bernardLogo.png';
+import logo from './assets/BDContactCard.png';
+import contactLeaf from './assets/thankyouLeaf.png'
 import emailjs from 'emailjs-com';
 
 import { toast } from 'react-toastify';
@@ -72,19 +73,14 @@ function ContactForm(){
                         <input class='contactInput row' type='text' placeholder='Phone' name="phone" onChange={e => setPhone(e.target.value)}></input>
                         <textarea class='contactInput row'  type='text' placeholder='Message*' name="message" rows='4' onChange={e => setMessage(e.target.value)}></textarea>
                         <input id='contactBtn' type='submit' value='SEND'></input>
+                        
                     </form>
-
-                    <div id='contactInfo'>
-                        <p id='infoTitle'> Bernard Design Build</p>
-                        <p id='infoDes'>
-                                Grayson Bernard
-                            <br/>bernardbuild@gmail.com
-                            <br/>(705) 888-0059
-                        </p>
-                    </div>
+                    
+                    
                 </div>
 
             </div>
+            <img id='contactLeaf' src={contactLeaf}></img>
             <div id='contactFooter'>
                 <p>Contact Us</p>
             </div>

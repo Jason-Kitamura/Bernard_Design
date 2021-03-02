@@ -141,8 +141,9 @@
 @media screen and (max-width: 1000px){
     .navButton{
         visibility: hidden;
-        height: 0;
-        width: 0;
+        height: 0px;
+        width: 0px;
+        padding: 0;
     }
     .navButton a {
         transition: 0s;
@@ -164,10 +165,10 @@
         width: auto;
         margin-left: 10px;
     }
+
     #iconRow{
         width: 100px;
-        margin-right: 55px;
-
+        margin-right: 60px;
     }
     #iconRow img{
         height: 25px;

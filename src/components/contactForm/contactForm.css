@@ -11,20 +11,26 @@
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 100%;
     margin: auto;
+    height: 100%;
 }
 #contactLeft{
-    padding-top: 75px ;
+    padding-top: 0px ;
+    
     
 }
 #contactLeft img{
-    width: 80%;
-    height: auto;
+    height: 100%;
+    width: auto;
+    max-height: 100%;
     display: block;
 
     margin: auto;
-
-
     padding: 20px;
+    
+}
+#contactRight{
+    padding-top: 5vh;
+    padding-bottom: 25px;
 }
 
 
@@ -53,7 +59,7 @@
 #contactForm {
     display: block;
     margin: auto;
-    margin-bottom: 150px;
+    margin-bottom: 85px;
     width: 60%;
     min-width: 300px;
     max-width: 700px;
@@ -86,7 +92,7 @@
     margin-right: 0;
     padding: 10px 20px 10px 20px;
     border: none;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(97, 97, 97);
     color: white;
 }
 #contactInfo {
@@ -108,10 +114,30 @@
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
 }
+#contactLeaf{
+    height: 200px;
+    width: auto;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    animation: leafDropContact 3.5s;   
+    }
+
+
+@keyframes leafDropContact{
+    from {
+      bottom: 1000px;
+      transform: rotateY(180deg);
+    }
+    to {
+      bottom: 35px;
+      transform: rotateY(360deg);
+    }
+  }
 #contactFooter{
     height: 100px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 4;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.671);
@@ -121,6 +147,12 @@
     padding-top: 10px;
     font-size: 50px;
     font-weight: 550;
+  }
+  #contactFooter p{
+    box-shadow: 0px 15px 10px -15px #111; 
+    width: fit-content;
+    display: block;
+    margin: auto;
   }
 
 .Toastify__toast--error{
@@ -136,22 +168,45 @@
 .Toastify__progress-bar--success{
     background-color: #5cc741ad !important;
 }
-@media screen and (max-width: 450px){
-    #contactTitle {
+@media screen and ( max-width: 700px){
+    #contact{
+        height: fit-content;
+    }
+    #contactGrid{
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: 60vh 80vh;
+    }
+    #contactLeft img{
+        height: 100%;
+        width: auto;
+    }
+    #contactRight{
+        height: fit-content;
+    }
+    #contactFooter{
+        height: 75px;
         font-size: 30px;
-        margin-bottom: 20px;
     }
-    #contactDes {
-        font-size: 20px;
-    }
-    #contactInfo{
-        width: fit-content;
-    }
-    #infoTitle {
-        font-size: 30px;
-        text-align: center;
-    }
-    #infoDes{
-        font-size: 20px;
-    }
+    #contactLeaf{
+        height: 200px;
+        width: auto;
+        position: absolute;
+        bottom: 100px;
+        right: 25vw;
+        animation: leafDropContact 3.5s;   
+        }
+    
+    
+    @keyframes leafDropContact{
+        from {
+          bottom: 2000px;
+          transform: rotateY(180deg);
+        }
+        to {
+          bottom: 100px;
+          transform: rotateY(360deg);
+        }
+      }
+    
+
 }
