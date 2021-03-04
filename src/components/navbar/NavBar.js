@@ -78,7 +78,7 @@ function NavBar(){
                                     </a>
                                 </div>
                                 <div class='col-4'>
-                                    <Link smooth to='/contact'>
+                                    <Link smooth to='/contact' onClick={e=>setSelectedNav(3)}>
                                         <img src={messageIcon}></img>
                                     </Link>
                                 </div>
