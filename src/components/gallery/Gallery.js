@@ -154,7 +154,10 @@ function Gallery (props){
                 </div>
             </div> */}
             <div id='instagram'>
-                <img src={instaLeaf}></img>
+                <a target='_blank' href='https://www.instagram.com/bernardcustombuild/' rel='noopener noreferrer'>
+                    <img src={instaLeaf}></img>
+                </a>
+                
             </div>
             <div id='galleryFooter'>
                 <p>

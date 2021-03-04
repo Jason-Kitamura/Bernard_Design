@@ -114,13 +114,17 @@
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
 }
+#leafDiv{
+    position: relative;
+    bottom:75px;
+    height: fit-content;
+    animation: leafDropContact 3s;
+}
 #contactLeaf{
     height: 200px;
     width: auto;
-    position: fixed;
-    bottom: 35px;
-    right: 10px;
-    animation: leafDropContact 3.5s;   
+    display: block;
+    margin:auto;
     }
 
 
@@ -130,12 +134,13 @@
       transform: rotateY(180deg);
     }
     to {
-      bottom: 35px;
+      bottom:75px;
       transform: rotateY(360deg);
     }
   }
 #contactFooter{
-    height: 100px;
+    height: 15vh;
+    max-height: 100px;
     width: 100%;
     position: fixed;
     z-index: 4;
@@ -148,6 +153,23 @@
     font-size: 50px;
     font-weight: 550;
   }
+  @media screen and (max-height: 600px){
+    #contactFooter {
+        font-size: 40px;
+    }
+    #contactDes{
+        margin: 0;
+    }
+    #contactBtn{
+        margin: 0;
+    }
+    #contactRight{
+        padding-top: 0;
+    }
+    .contactInput{
+        height: 30px;
+    }
+}
   #contactFooter p{
     box-shadow: 0px 15px 10px -15px #111; 
     width: fit-content;
@@ -187,14 +209,9 @@
         height: 75px;
         font-size: 30px;
     }
-    #contactLeaf{
-        height: 200px;
-        width: auto;
-        position: absolute;
-        bottom: 100px;
-        right: 25vw;
-        animation: leafDropContact 3.5s;   
-        }
+    #leafDiv{
+        bottom: 0px;
+    }
     
     
     @keyframes leafDropContact{
@@ -203,7 +220,7 @@
           transform: rotateY(180deg);
         }
         to {
-          bottom: 100px;
+          bottom: 0px;
           transform: rotateY(360deg);
         }
       }

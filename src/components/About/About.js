@@ -121,7 +121,10 @@ function About(){
                   </p>
           </div>
           <div id='aboutLeaf'>
+          <a target='_blank' href='https://www.instagram.com/bernardcustombuild/' rel='noopener noreferrer'>
             <img src={aboutLeaf}></img>
+          </a>
+            
           </div>
           <div id='aboutFooter'>
             <p>

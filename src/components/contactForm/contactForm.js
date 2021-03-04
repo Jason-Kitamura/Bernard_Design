@@ -71,16 +71,19 @@ function ContactForm(){
                         <input class='contactInput row' type='text' placeholder='Name*' name="name" onChange={e => setName(e.target.value)}></input>
                         <input class='contactInput row' type='email' placeholder='Email*' name="email" onChange={e => setEmail(e.target.value)}></input>
                         <input class='contactInput row' type='text' placeholder='Phone' name="phone" onChange={e => setPhone(e.target.value)}></input>
-                        <textarea class='contactInput row'  type='text' placeholder='Message*' name="message" rows='4' onChange={e => setMessage(e.target.value)}></textarea>
+                        <textarea class='contactInput row' id='contactMessage' type='text' placeholder='Message*' name="message" rows='4' onChange={e => setMessage(e.target.value)}></textarea>
                         <input id='contactBtn' type='submit' value='SEND'></input>
                         
                     </form>
-                    
+                    <div id='leafDiv'>
+                        <img id='contactLeaf' src={contactLeaf}></img> 
+                    </div>
                     
                 </div>
 
             </div>
-            <img id='contactLeaf' src={contactLeaf}></img>
+            
+            
             <div id='contactFooter'>
                 <p>Contact Us</p>
             </div>
