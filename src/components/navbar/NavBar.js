@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 // import { NavHashLink as Link} from "react-router-hash-link";
 import {NavLink as Link} from 'react-router-dom';
 
@@ -12,9 +12,27 @@ import messageIcon from './assets/BDBmessageIcon.png';
 
 function NavBar(){
 
+    const [selectNav, setSelectedNav]=useState(0)
+
     function toggleDropMenu(){
         document.getElementById('dropMenu').classList.toggle('active');
         console.log('sidebar')
+    }
+    function selectedStyle( i ){
+        const selected = {   
+            borderBottom: 'solid white 2px',
+            fontWeight: 'bolder',
+            paddingBottom: 0,
+        }
+
+        const notSelected = {
+            
+        }
+        if ( i === selectNav ){
+            return selected    
+        } else {
+            return notSelected
+        }
     }
 
     return(
@@ -27,23 +45,23 @@ function NavBar(){
                     </Link>
             
                     <div class='row' id='navBtnRow'>
-                        <div id='homeNavBtn' class='col navButton'>
-                            <Link to='/' activeClassName='navSelected' >
+                        <div id='homeNavBtn' class='col navButton' >
+                            <Link to='/' style={selectedStyle(0)} onClick={e=>setSelectedNav(0)}>
                                 Home
                             </Link>
                         </div>
-                        <div  id='aboutNavBtn' class='col navButton'>
-                            <Link smooth to='/about' activeClassName='navSelected' >
+                        <div  id='aboutNavBtn' class='col navButton' >
+                            <Link smooth to='/about' style={selectedStyle(1)} onClick={e=>setSelectedNav(1)} >
                                 About
                             </Link>
                         </div>
-                        <div id='galleryNavBtn' class='col navButton'>
-                            <Link smooth to='/gallery' activeClassName='navSelected'>
+                        <div id='galleryNavBtn' class='col navButton' >
+                            <Link smooth to='/gallery'style={selectedStyle(2)} onClick={e=>setSelectedNav(2)} >
                                 Gallery
                             </Link>
                         </div>
-                        <div id='contactNavBtn' class='col navButton'>
-                            <Link smooth to='/contact' activeClassName='navSelected'>
+                        <div id='contactNavBtn' class='col navButton' >
+                            <Link smooth to='/contact' style={selectedStyle(3)} onClick={e=>setSelectedNav(3)}>
                                 Contact
                             </Link>
                         </div>
