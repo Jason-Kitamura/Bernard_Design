@@ -17,11 +17,11 @@ import instaIcon from './assets/BDBinstagramIcon.png';
 
 function Gallery (props){
 
-    const [ bathroomStyle, setBathroomStyle ] = useState({ backgroundImage: `url(${bathroomPic})`});
-    const [ flooringStyle, setFlooringStyle ] = useState({ backgroundImage: `url(${flooringPic})`});
-    const [ fireplaceStyle, setFireplaceStyle ] = useState({ backgroundImage: `url(${fireplacePic})`});
+    const [ bathroomStyle, setBathroomStyle ] = useState({ backgroundImage: `url(${bathroomPic})`, backgroundPosition: 'center'});
+    const [ flooringStyle, setFlooringStyle ] = useState({ backgroundImage: `url(${flooringPic})`, backgroundPosition: 'top' });
+    const [ fireplaceStyle, setFireplaceStyle ] = useState({ backgroundImage: `url(${fireplacePic})`,backgroundPosition: 'center' });
     const [ kitchenStyle, setKitchenStyle ] = useState({ backgroundImage: `url(${kitchenPic})`});
-    const [ miscStyle, setMiscStyle ] = useState({ backgroundImage: `url(${miscPic})`});
+    const [ miscStyle, setMiscStyle ] = useState({ backgroundImage: `url(${miscPic})`, backgroundPosition: 'top' });
     const [ outdoorStyle, setOutdoorStyle ] = useState({ backgroundImage: `url(${outdoorPic})`});
 
 

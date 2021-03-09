@@ -7,7 +7,7 @@
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    max-width: 100vh;
+    max-width: 150vh;
     height: 80%;
     max-height: 70vw;
 }
@@ -112,7 +112,11 @@
     bottom: 30px;
     left: -10px;
     height: fit-content;
+    transition: 0.2s;
     animation: leafDropGallery 3.5s;   
+}
+#instagram:hover{
+    bottom: 50px;
 }
 #instagram img{
     height: 200px;
@@ -137,7 +141,7 @@
     position: absolute;
     z-index: 4;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.671);
+    background-color: rgba(255, 255, 255, 0.883);
     color: rgb(97, 97, 97);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -152,7 +156,7 @@
 
       }
       to {
-        background-color: rgba(255, 255, 255, 0.671);
+        background-color: rgba(255, 255, 255, 0.883);
 
       }
   }
@@ -161,8 +165,7 @@
           font-size: 40px;
       }
   }
-  #galleryFooter p{
-    box-shadow: 0px 15px 10px -15px #111; 
+  #galleryFooter p{ 
     width: fit-content;
     display: block;
     margin: auto;
@@ -171,11 +174,11 @@
 @keyframes footerText{
     from {
         color: rgba(238, 130, 238, 0);
-        box-shadow: none;
+
       }
       to {
         color:rgb(97, 97, 97);
-        box-shadow: 0px 15px 10px -15px #111; 
+
       }
   }
 .react-images__footer__caption {
@@ -243,11 +246,10 @@
       }
     #instagram {
         height: fit-content;
-        bottom: 35px;
-
-
+        bottom: 50px;
         animation: leafDropGallery 3.5s;   
     }
+
     #instagram img{
         height: 125px;
         width: auto;

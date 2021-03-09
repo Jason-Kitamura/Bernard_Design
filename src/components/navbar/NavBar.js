@@ -40,7 +40,7 @@ function NavBar(){
            
                 <navBar id='navBar' class='navbar'>
                     
-                    <Link smooth to='/'  >
+                    <Link smooth to='/' onClick={e=>setSelectedNav(0)} >
                         <img src={logo} id='logo'></img>
                     </Link>
             

@@ -98,7 +98,7 @@
 .desBar{
   height: 100px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.76);
@@ -122,6 +122,10 @@
   }
   #homeLogo img {
     height: 400px;
+  }
+  .desBar{
+    font-size: 21px;
+    padding: 10px;
   }
 }
  
