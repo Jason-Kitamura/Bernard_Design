@@ -37,7 +37,7 @@ function Gallery (props){
                     </Link>
                 </div>
                 <div class='galleryCell'>
-                    <Link to="/photogallery/bathroom" onClick={e => props.setState(1)} >
+                    <Link to="/photogallery/fireplace" onClick={e => props.setState(1)} >
                         <div class='cardPic' style={fireplaceStyle}></div>
                         <div class='cardTitle'>
                             <p>Fireplace</p>
@@ -45,7 +45,7 @@ function Gallery (props){
                     </Link>
                 </div>
                 <div class='galleryCell'>
-                <Link to="/photogallery/bathroom" onClick={e => props.setState(2)} >
+                <Link to="/photogallery/flooring" onClick={e => props.setState(2)} >
                         <div class='cardPic' style={flooringStyle}></div>
                         <div class='cardTitle'>
                             <p>Flooring</p>
@@ -53,7 +53,7 @@ function Gallery (props){
                     </Link>
                 </div>
                 <div class='galleryCell'>
-                <Link to="/photogallery/bathroom" onClick={e => props.setState(3)}>
+                <Link to="/photogallery/kitchen" onClick={e => props.setState(3)}>
                         <div class='cardPic' style={kitchenStyle}></div>
                         <div class='cardTitle'>
                             <p>Kitchen</p>
@@ -61,7 +61,7 @@ function Gallery (props){
                     </Link>
                 </div>
                 <div class='galleryCell'>
-                <Link to="/photogallery/bathroom" onClick={e => props.setState(4)}>
+                <Link to="/photogallery/miscellaneous" onClick={e => props.setState(4)}>
                         <div class='cardPic' style={miscStyle}></div>
                         <div class='cardTitle'>
                             <p>Misc</p>
@@ -69,7 +69,7 @@ function Gallery (props){
                     </Link>
                 </div>
                 <div class='galleryCell'>
-                <Link to="/photogallery/bathroom" onClick={e => props.setState(5)}>
+                <Link to="/photogallery/outdoor" onClick={e => props.setState(5)}>
                         <div class='cardPic' style={outdoorStyle}></div>
                         <div class='cardTitle'>
                             <p>Outdoor</p>
