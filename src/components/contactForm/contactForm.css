@@ -115,6 +115,9 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 #leafDiv{
+    display: block;
+    margin: auto;
+    width: fit-content;
     position: relative;
     bottom:75px;
     height: fit-content;
